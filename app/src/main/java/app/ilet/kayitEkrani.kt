@@ -25,6 +25,8 @@ class kayitEkrani : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnKayitKaydol.setOnClickListener {
+            // TODO: Abbas kanka burada giriş yapmayı felan denesene
+
             val action = kayitEkraniDirections.actionKayitEkraniToKayitTelefon()
             Navigation.findNavController(it).navigate(action)
         }
