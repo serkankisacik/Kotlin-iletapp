@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".girisEkrani">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+   <Button
+       android:id="@+id/btnOturumAc"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:layout_marginStart="55dp"
+       android:layout_marginEnd="55dp"
+       android:layout_marginBottom="269dp"
+       android:background="@drawable/butonyesilgenis"
+       android:fontFamily="@font/poppins_bold"
+       android:text="@string/oturum_a"
+       android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/parolamiUnuttum" />
+
+   <TextView
+       android:id="@+id/parolamiUnuttum"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="118dp"
+       android:fontFamily="@font/poppins_semibold"
+       android:text="@string/parolan_z_m_unuttunuz"
+       android:textColor="#395950"
+       app:layout_constraintBottom_toTopOf="@+id/btnOturumAc"
+       app:layout_constraintEnd_toEndOf="@+id/editTextSifre"
+       app:layout_constraintTop_toBottomOf="@+id/editTextSifre" />
+
+   <EditText
+       android:id="@+id/editTextSifre"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="55dp"
+       android:layout_marginEnd="55dp"
+       android:layout_marginBottom="18dp"
+       android:autofillHints=""
+       android:ems="10"
+       android:inputType="textPassword"
+       app:layout_constraintBottom_toTopOf="@+id/parolamiUnuttum"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/editTexteposta" />
+
+   <EditText
+       android:id="@+id/editTexteposta"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="55dp"
+       android:layout_marginTop="131dp"
+       android:layout_marginEnd="55dp"
+       android:layout_marginBottom="33dp"
+       android:autofillHints=""
+       android:ems="10"
+       android:inputType="textPersonName"
+       android:text="@string/e_posta"
+       app:layout_constraintBottom_toTopOf="@+id/editTextSifre"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

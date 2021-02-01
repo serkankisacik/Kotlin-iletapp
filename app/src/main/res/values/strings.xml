@@ -2,4 +2,23 @@
     <string name="app_name">ilet</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="kargolar_n_z_en_h_zl_ve_g_venli_ekilde_iletin">Kargolarınızı en hızlı ve güvenli şekilde iletin.</string>
+    <string name="ye_ol">Üye ol</string>
+    <string name="giri_yap">Giriş Yap</string>
+    <string name="let_uygulamas">İlet Uygulaması</string>
+    <string name="ana_sayfaya_ho_geldiniz">Ana sayfaya hoş geldiniz</string>
+    <string name="giri_fragmenti">Giriş Fragmenti</string>
+    <string name="let_uygulamas_logosu">İlet Uygulaması Logosu</string>
+    <string name="let">İlet</string>
+    <string name="oturum_a">Oturum Aç</string>
+    <string name="parolan_z_m_unuttunuz">Parolanızı mı unuttunuz?</string>
+    <string name="sim">İsim</string>
+    <string name="e_posta">E-posta</string>
+    <string name="kaydol">Kaydol</string>
+    <string name="sonraki">Sonraki</string>
+    <string name="telefon_numaran_z">Telefon Numaranız</string>
+    <string name="_5071234569">5071234569</string>
+    <string name="hesab_kurtar">Hesabı Kurtar</string>
+    <string name="e_posta_kullan_c_ad_veya_telefon_numaras_girin">E-posta, kullanıcı adı veya telefon numarası girin</string>
 </resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/acilisFragment">
+
+    <fragment
+        android:id="@+id/acilisFragment"
+        android:name="app.ilet.acilisFragment"
+        android:label="fragment_acilis"
+        tools:layout="@layout/fragment_acilis" >
+        <action
+            android:id="@+id/action_acilisFragment_to_girisEkrani"
+            app:destination="@id/girisEkrani" />
+        <action
+            android:id="@+id/action_acilisFragment_to_kayitEkrani"
+            app:destination="@id/kayitEkrani" />
+        <action
+            android:id="@+id/action_acilisFragment_to_hosgeldiniz"
+            app:destination="@id/hosgeldiniz" />
+    </fragment>
+    <fragment
+        android:id="@+id/girisEkrani"
+        android:name="app.ilet.girisEkrani"
+        android:label="fragment_giris_ekrani"
+        tools:layout="@layout/fragment_giris_ekrani" >
+        <action
+            android:id="@+id/action_girisEkrani_to_hesabiKurtar"
+            app:destination="@id/hesabiKurtar" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitEkrani"
+        android:name="app.ilet.kayitEkrani"
+        android:label="fragment_kayit_ekrani"
+        tools:layout="@layout/fragment_kayit_ekrani" >
+        <action
+            android:id="@+id/action_kayitEkrani_to_kayitTelefon"
+            app:destination="@id/kayitTelefon" />
+    </fragment>
+    <fragment
+        android:id="@+id/hosgeldiniz"
+        android:name="app.ilet.hosgeldiniz"
+        android:label="fragment_hosgeldiniz"
+        tools:layout="@layout/fragment_hosgeldiniz" />
+    <fragment
+        android:id="@+id/hesabiKurtar"
+        android:name="app.ilet.hesabiKurtar"
+        android:label="fragment_hesabi_kurtar"
+        tools:layout="@layout/fragment_hesabi_kurtar" />
+    <fragment
+        android:id="@+id/kayitTelefon"
+        android:name="app.ilet.kayitTelefon"
+        android:label="fragment_kayit_telefon"
+        tools:layout="@layout/fragment_kayit_telefon" >
+        <action
+            android:id="@+id/action_kayitTelefon_to_kilavuz1"
+            app:destination="@id/kilavuz1" />
+    </fragment>
+    <fragment
+        android:id="@+id/kilavuz1"
+        android:name="app.ilet.kilavuz1"
+        android:label="fragment_kilavuz1"
+        tools:layout="@layout/fragment_kilavuz1" >
+        <action
+            android:id="@+id/action_kilavuz1_to_kilavuz2"
+            app:destination="@id/kilavuz2" />
+    </fragment>
+    <fragment
+        android:id="@+id/kilavuz2"
+        android:name="app.ilet.kilavuz2"
+        android:label="fragment_kilavuz2"
+        tools:layout="@layout/fragment_kilavuz2" >
+        <action
+            android:id="@+id/action_kilavuz2_to_kilavuz3"
+            app:destination="@id/kilavuz3" />
+    </fragment>
+    <fragment
+        android:id="@+id/kilavuz3"
+        android:name="app.ilet.kilavuz3"
+        android:label="fragment_kilavuz3"
+        tools:layout="@layout/fragment_kilavuz3" />
+</navigation>
