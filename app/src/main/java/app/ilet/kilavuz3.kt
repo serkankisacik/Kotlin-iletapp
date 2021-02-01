@@ -18,4 +18,7 @@ class kilavuz3 : Fragment() {
         return inflater.inflate(R.layout.fragment_kilavuz3, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 }

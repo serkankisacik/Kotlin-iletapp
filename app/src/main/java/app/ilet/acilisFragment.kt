@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
+import kotlinx.android.synthetic.main.fragment_acilis.*
 
 class acilisFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,10 +20,16 @@ class acilisFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_acilis, container, false)
     }
 
-    fun uyeol(view: View){
-
-        val action= kayitEkraniDirections.actionKayitEkraniToKayitTelefon()
-        Navigation.findNavController(view).navigate(action)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        btnUyeol.setOnClickListener {
+            val action = acilisFragmentDirections.actionAcilisFragmentToKayitEkrani()
+            Navigation.findNavController(it).navigate(action)
+       }
+        btnGirisYap.setOnClickListener {
+            val action = acilisFragmentDirections.actionAcilisFragmentToGirisEkrani()
+            Navigation.findNavController(it).navigate(action)
+        }
     }
 
 }

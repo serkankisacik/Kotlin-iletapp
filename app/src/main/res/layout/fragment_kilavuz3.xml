@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,71 +8,101 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="49dp"
-        android:layout_height="25dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="367dp"
+        android:contentDescription="@string/st_nokta"
         android:src="@drawable/noktalariki"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="46dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="13dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Atla"
+        android:text="@string/atla"
         android:textColor="#2E0D19"
-        tools:layout_editor_absoluteX="314dp"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="500dp"
-        android:layout_height="400dp"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="239dp"
+        android:contentDescription="@string/g_rsel_g_nder"
         android:src="@drawable/gorseltalep"
-        tools:layout_editor_absoluteX="-45dp"
-        tools:layout_editor_absoluteY="92dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="Gönder"
+        android:text="@string/g_nder"
         android:textColor="#2E0D19"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="509dp" />
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="300dp"
+        android:textAlignment="center"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Diğer kullanıcılara göndereceğiniz kargo hakkında bilgi verin ve kargonuzu iletsinler"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/di_er_kullan_c_lara_g_nderece_iniz_kargo_hakk_nda_bilgi_verin_ve_kargonuzu_iletsinler"
         android:textColor="#9F9F9F"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="566dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnKlavuzucSonraki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-    <Button
-        android:id="@+id/button2"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnKlavuzucSonraki"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
         android:background="@drawable/butonbeyaz"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sonraki"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#395950"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="647dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="18dp"
         android:background="@drawable/butonturuncu"
         android:fontFamily="@font/poppins_bold"
-        android:text="Talep"
+        android:text="@string/talep"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#395950"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="438dp" />
+        android:textColor="#2D0D19"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

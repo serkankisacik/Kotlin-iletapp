@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnkilavuzGonder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,6 +69,7 @@
         android:layout_marginBottom="1dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Keşfet"
+        android:textAlignment="center"
         android:textColor="#2E0D19"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
@@ -83,13 +84,14 @@
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="12dp"
         android:fontFamily="@font/poppins_semibold"
+        android:textAlignment="center"
         android:text="Gezilerini ve alabilecekleri yükleri belirleyen diğer kullanıcıların kargo iletme bilgilerini öğrenin."
         app:layout_constraintBottom_toTopOf="@+id/btnkilavuzikiSonraki"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnkilavuzikiSonraki"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

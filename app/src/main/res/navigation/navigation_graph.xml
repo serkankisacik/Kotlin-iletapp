@@ -16,9 +16,6 @@
         <action
             android:id="@+id/action_acilisFragment_to_kayitEkrani"
             app:destination="@id/kayitEkrani" />
-        <action
-            android:id="@+id/action_acilisFragment_to_hosgeldiniz"
-            app:destination="@id/hosgeldiniz" />
     </fragment>
     <fragment
         android:id="@+id/girisEkrani"
@@ -28,6 +25,9 @@
         <action
             android:id="@+id/action_girisEkrani_to_hesabiKurtar"
             app:destination="@id/hesabiKurtar" />
+        <action
+            android:id="@+id/action_girisEkrani_to_hosgeldiniz"
+            app:destination="@id/hosgeldiniz" />
     </fragment>
     <fragment
         android:id="@+id/kayitEkrani"

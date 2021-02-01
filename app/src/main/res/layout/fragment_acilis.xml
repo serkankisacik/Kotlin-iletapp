@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iletGirisLogo" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnUyeol"
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -56,13 +56,14 @@
         android:background="@drawable/butonyesilgenis"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/ye_ol"
+        android:textColor="#FFFFFF"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toTopOf="@+id/btnGirisYap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnGirisYap"
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -72,6 +73,7 @@
         android:background="@drawable/butonyesilgenis"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/giri_yap"
+        android:textColor="#FFFFFF"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -7,7 +7,7 @@
     tools:context=".kayitEkrani">
 
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/editTextKayitIsim"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -16,29 +16,30 @@
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="40dp"
         android:ems="10"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
-        android:text="@string/sim"
         app:layout_constraintBottom_toTopOf="@+id/editTextKayitEposta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/editTextKayitEposta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="34dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/e_posta"
         android:inputType="textPersonName"
+        android:textColor="@color/black"
         android:text="@string/e_posta"
         app:layout_constraintBottom_toTopOf="@+id/editTextKayitSifre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextKayitIsim"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextKayitIsim" />
 
     <EditText
         android:id="@+id/editTextKayitSifre"
@@ -47,18 +48,20 @@
         android:layout_marginStart="55dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="103dp"
+        android:autofillHints=""
         android:ems="10"
+        android:textColor="@color/black"
+        android:hint="@string/parola"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/btnKayitKaydol"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextKayitEposta"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextKayitEposta" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnKayitKaydol"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginStart="55dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="309dp"
@@ -66,6 +69,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/kaydol"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

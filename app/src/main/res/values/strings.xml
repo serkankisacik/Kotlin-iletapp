@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ilet</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="todo">TODO</string>
     <string name="kargolar_n_z_en_h_zl_ve_g_venli_ekilde_iletin">Kargolarınızı en hızlı ve güvenli şekilde iletin.</string>
@@ -21,4 +20,16 @@
     <string name="_5071234569">5071234569</string>
     <string name="hesab_kurtar">Hesabı Kurtar</string>
     <string name="e_posta_kullan_c_ad_veya_telefon_numaras_girin">E-posta, kullanıcı adı veya telefon numarası girin</string>
+    <string name="atla">Atla</string>
+    <string name="g_nder">Gönder</string>
+    <string name="di_er_kullan_c_lara_g_nderece_iniz_kargo_hakk_nda_bilgi_verin_ve_kargonuzu_iletsinler">Diğer kullanıcılara göndereceğiniz kargo hakkında bilgi verin ve kargonuzu iletsinler</string>
+    <string name="talep">Talep</string>
+    <string name="st_nokta">Üst Üç nokta</string>
+    <string name="g_rsel_g_nder">Görsel Gönder</string>
+    <string name="tekrar_ho_geldin">Tekrar Hoşgeldin</string>
+    <string name="sen_de_il_misin">Sen değil misin?</string>
+    <string name="kullan_c_smi">Kullanıcı İsmi</string>
+    <string name="devam_et">Devam et</string>
+    <string name="parola">Parola</string>
+    <string name="sim_soyisim">İsim Soyisim</string>
 </resources>

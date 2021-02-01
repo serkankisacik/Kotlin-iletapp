@@ -7,10 +7,10 @@
     tools:context=".girisEkrani">
 
 
-   <Button
+   <androidx.appcompat.widget.AppCompatButton
        android:id="@+id/btnOturumAc"
        android:layout_width="0dp"
-       android:layout_height="0dp"
+       android:layout_height="wrap_content"
        android:layout_marginStart="55dp"
        android:layout_marginEnd="55dp"
        android:layout_marginBottom="269dp"
@@ -18,6 +18,7 @@
        android:fontFamily="@font/poppins_bold"
        android:text="@string/oturum_a"
        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+       android:textColor="#FFFFFF"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
