@@ -71,7 +71,7 @@
         android:layout_marginBottom="79dp"
         android:background="@drawable/butonyesilgenis"
         android:fontFamily="@font/poppins_bold"
-        android:text="Giriş yap"
+        android:text="@string/giri_yap"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

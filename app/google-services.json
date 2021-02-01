@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340688102349",
+    "project_id": "ilet-93eb8",
+    "storage_bucket": "ilet-93eb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340688102349:android:59ca181b83da72f06f1a84",
+        "android_client_info": {
+          "package_name": "app.ilet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340688102349-hmfcathd4ql93jss4c22lfe43dia8h56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBajtU5PgsDGPw2DoCsusri125lEJMLP8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340688102349-hmfcathd4ql93jss4c22lfe43dia8h56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
