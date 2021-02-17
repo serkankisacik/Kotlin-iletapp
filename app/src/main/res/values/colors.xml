@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="KoyuMor">#2E0D19</color>
+    <color name="Yesil">#395950</color>
+    <color name="pembe">#F2B9AC</color>
+    <color name="bos" />
+    <color name="koyuGri">#9F9F9F</color>
+    <color name="Gri">#E9E9E9</color>
+    <color name="Turuncu">#D95E52</color>
+    <color name="Kahverengi">#D99B77</color>
+    <color name="Mor">#732240</color>
 </resources>

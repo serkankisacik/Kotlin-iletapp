@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ayarlar">
+
+    <TextView
+        android:id="@+id/textViewAyarlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/ayarlar"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAyar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/gizlilik_politikas"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAyar5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAyar5" />
+
+    <TextView
+        android:id="@+id/textViewAyar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/kullan_m_artlar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAyar4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAyar4" />
+
+    <TextView
+        android:id="@+id/textViewAyar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="113dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/parmak_zi"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAyar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/let_hakk_nda"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAyar6" />
+
+    <TextView
+        android:id="@+id/textViewAyar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="99dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/gizli_hesap"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAyar3" />
+
+    <TextView
+        android:id="@+id/textViewAyar7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/_2fa"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAyar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAyar" />
+
+    <TextView
+        android:id="@+id/textViewAyar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/hesab_dondur"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAyar2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAyar2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

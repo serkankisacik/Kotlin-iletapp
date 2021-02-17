@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sss">
+
+
+    <TextView
+        android:id="@+id/textViewSssorular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="93dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/s_k_sorulan_sorular"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="122dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sss"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCevapBir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSorubir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/bu_uygulama_gizlili_imi_nas_l_koruyor"
+        app:layout_constraintStart_toStartOf="@+id/textViewSssorular"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSssorular" />
+
+    <TextView
+        android:id="@+id/textViewCevapBir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="49dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/it_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAciklamabir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSSS" />
+
+    <TextView
+        android:id="@+id/textViewAciklamabir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="341dp"
+        android:text="@string/buraya_expandable_recyclerview_tarz_nda_bir_ey_ayp_lacak"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCevapBir" />
+</androidx.constraintlayout.widget.ConstraintLayout>

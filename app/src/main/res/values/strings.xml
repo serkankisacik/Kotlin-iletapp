@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">ilet</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="todo">TODO</string>
@@ -32,4 +33,28 @@
     <string name="devam_et">Devam et</string>
     <string name="parola">Parola</string>
     <string name="sim_soyisim">İsim Soyisim</string>
+    <string name="s_k_sorulan_sorular">Sık Sorulan Sorular</string>
+    <string name="sss">SSS</string>
+    <string name="bu_uygulama_gizlili_imi_nas_l_koruyor">Bu uygulama gizliliğimi nasıl koruyor?</string>
+    <string name="it_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</string>
+    <string name="buraya_expandable_recyclerview_tarz_nda_bir_ey_ayp_lacak">Buraya Expandable RecyclerView tarzında birşey aypılacak</string>
+    <string name="gp">GP</string>
+    <string name="gizlilik_poliitikasi">Gizlilik Poliitikasi</string>
+    <string name="t_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</string>
+    <string name="kabul_et">Kabul Et</string>
+    <string name="reddet">Reddet</string>
+    <string name="k">KŞ</string>
+    <string name="kullan_m_artlar">Kullanım Şartları</string>
+    <string name="profili_d_zenle">Profili Düzenle</string>
+    <string name="de_i_iklikleri_kaydet">Değişiklikleri Kaydet</string>
+    <string name="kullan_c_ad">Kullanıcı Adı</string>
+    <string name="profil_foto_raf">Profil Fotoğrafı</string>
+    <string name="altl_k">Altlık</string>
+    <string name="hesab_dondur">Hesabı Dondur</string>
+    <string name="_2fa">2FA</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="gizlilik_politikas">Gizlilik Politikası</string>
+    <string name="parmak_zi">Parmak İzi</string>
+    <string name="let_hakk_nda">İlet Hakkında</string>
+    <string name="gizli_hesap">Gizli Hesap</string>
 </resources>

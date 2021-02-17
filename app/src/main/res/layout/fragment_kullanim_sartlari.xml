@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kullanimSartlari">
+
+
+    <TextView
+        android:id="@+id/textViewKS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/k"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewKullanimSartlari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/kullan_m_artlar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKSbir"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewKSbir"
+        android:layout_width="0dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="129dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/t_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewKSiki"
+        app:layout_constraintEnd_toEndOf="@+id/textViewKSiki"
+        app:layout_constraintStart_toStartOf="@+id/textViewKSiki"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewKSiki"
+        android:layout_width="0dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/t_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonKSKabul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:background="@drawable/butonyesil"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/kabul_et"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonKSKabul2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonKSKabul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/butonturuncu"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/reddet"
+        android:textColor="@color/KoyuMor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonKSKabul" />
+</androidx.constraintlayout.widget.ConstraintLayout>
