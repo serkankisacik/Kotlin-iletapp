@@ -58,4 +58,23 @@
     <string name="let_hakk_nda">İlet Hakkında</string>
     <string name="gizli_hesap">Gizli Hesap</string>
     <string name="ifre">Şifre</string>
+    <string name="_3_saatlik_gezi">3 Saatlik Gezi</string>
+    <string name="_2335_km">2335 km</string>
+    <string name="nceki_geziler">Önceki Geziler</string>
+    <string name="u_ak_simgesi">Uçak Simgesi</string>
+    <string name="var_noktas_simgesi">Varış noktası Simgesi</string>
+    <string name="karab_k">Karabük</string>
+    <string name="serkan">Serkan</string>
+    <string name="toplam_mesafe">Toplam Mesafe</string>
+    <string name="son_12_ayda_yapt_geziler">Son 12 ayda yaptığı geziler</string>
+    <string name="_20_ubat_2021">20 Şubat 2021</string>
+    <string name="bursa">BURSA</string>
+    <string name="sonraki_hedef">Sonraki Hedef</string>
+    <string name="aydin">AYDIN</string>
+    <string name="yolunda">YOLUNDA</string>
+    <string name="d_zenle">Düzenle</string>
+    <string name="ticket_arkaplan">Ticket Arkaplan</string>
+    <string name="k_noktasi_simgesi">Çıkış Noktasi Simgesi</string>
+    <string name="kullan_c_y_ld_zlar">Kullanıcı Yıldızları</string>
+    <string name="kullan_c_profil_foto_raf">Kullanıcı Profil Fotoğrafı</string>
 </resources>

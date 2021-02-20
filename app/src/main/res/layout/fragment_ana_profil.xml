@@ -1,14 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".anaProfil">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/imageViewYolDurum"
+        android:layout_width="750dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="27dp"
+        android:contentDescription="@string/ticket_arkaplan"
+        android:src="@drawable/cikisvarisdusukx"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-170dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textViewGeziSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/_3_saatlik_gezi"
+        android:textColor="@color/KoyuMor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGeziTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/_20_ubat_2021"
+        android:textColor="@color/KoyuMor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGeziCikis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/bursa"
+        android:textColor="@color/Yesil"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewYolDurum"
+        app:layout_constraintEnd_toEndOf="@+id/textViewKullaniciSonraki"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="47dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/serkan"
+        android:textColor="@color/KoyuMor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewYolDurum" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/_2335_km"
+        android:textColor="@color/KoyuMor"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewYildiz" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciOG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginBottom="197dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/nceki_geziler"
+        android:textColor="@color/KoyuMor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewYildiz" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciOGAc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/son_12_ayda_yapt_geziler"
+        android:textColor="@color/KoyuMor"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewKullaniciOG"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciOG" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciSH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sonraki_hedef"
+        android:textColor="@color/KoyuMor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDuzenle"
+        app:layout_constraintTop_toTopOf="@+id/imageViewUcak" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciSonraki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/karab_k"
+        android:textColor="@color/KoyuMor"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewKullaniciSH"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciSH" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/toplam_mesafe"
+        android:textColor="@color/KoyuMor"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewKullaniciKm"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciKm" />
+
+    <TextView
+        android:id="@+id/textViewGeziVaris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/aydin"
+        android:textColor="@color/Yesil"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewYolDurum"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGeziDurum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/yolunda"
+        android:textColor="@color/Turuncu"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewYolDurum"
+        app:layout_constraintStart_toEndOf="@+id/textViewGeziCikis" />
+
+    <ImageView
+        android:id="@+id/imageViewCikisico"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/k_noktasi_simgesi"
+        android:src="@drawable/evyesil"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewVarisico"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGeziCikis"
+        app:layout_constraintStart_toStartOf="@+id/textViewGeziSure"
+        app:layout_constraintTop_toTopOf="@+id/textViewGeziCikis" />
+
+    <ImageView
+        android:id="@+id/imageViewVarisico"
+        android:layout_width="35dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="58dp"
+        android:contentDescription="@string/var_noktas_simgesi"
+        android:src="@drawable/varisnokta"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewGeziVaris"
+        app:layout_constraintEnd_toEndOf="@+id/textViewGeziVaris"
+        app:layout_constraintStart_toEndOf="@+id/textViewGeziDurum"
+        app:layout_constraintTop_toTopOf="@+id/textViewGeziCikis" />
+
+    <ImageView
+        android:id="@+id/imageViewYildiz"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/kullan_c_y_ld_zlar"
+        android:src="@drawable/yildiz"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewKullaniciFotograf"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewUcak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciAd" />
+
+    <ImageView
+        android:id="@+id/imageViewKullaniciFotograf"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="70dp"
+        android:contentDescription="@string/kullan_c_profil_foto_raf"
+        android:src="@drawable/pf"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDuzenle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonDuzenle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGeziVaris" />
+
+    <Button
+        android:id="@+id/buttonDuzenle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="328dp"
+        android:background="@drawable/butonyesil"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/d_zenle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewYolDurum" />
+
+    <ImageView
+        android:id="@+id/imageViewUcak"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="9dp"
+        android:contentDescription="@string/u_ak_simgesi"
+        android:src="@drawable/ucaksiyah"
+        app:layout_constraintEnd_toStartOf="@+id/textViewKullaniciSH"
+        app:layout_constraintStart_toEndOf="@+id/textViewKullaniciAd"
+        app:layout_constraintTop_toTopOf="@+id/textViewKullaniciKm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
