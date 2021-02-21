@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ProfilActivity"></activity>
+        <activity android:name=".mesajlar"></activity>
+        <activity android:name=".KargoActivity" />
+        <activity android:name=".ProfilActivity" />
         <activity android:name=".giris" />
         <activity android:name=".MainActivity">
             <intent-filter>
