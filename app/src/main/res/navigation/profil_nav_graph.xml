@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profil_nav_graph"
+    app:startDestination="@id/anaProfil">
+
+    <fragment
+        android:id="@+id/anaProfil"
+        android:name="app.ilet.anaProfil"
+        android:label="fragment_ana_profil"
+        tools:layout="@layout/fragment_ana_profil" >
+        <action
+            android:id="@+id/action_anaProfil_to_profilFotografi"
+            app:destination="@id/profilFotografi" />
+        <action
+            android:id="@+id/action_anaProfil_to_ayarlar"
+            app:destination="@id/ayarlar" />
+        <action
+            android:id="@+id/action_anaProfil_to_yolda"
+            app:destination="@id/yolda" />
+        <action
+            android:id="@+id/action_anaProfil_to_gelecekYolculuk"
+            app:destination="@id/gelecekYolculuk" />
+        <action
+            android:id="@+id/action_anaProfil_to_gecmisYolculuk"
+            app:destination="@id/gecmisYolculuk" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFotografi"
+        android:name="app.ilet.profilFotografi"
+        android:label="fragment_profil_fotografi"
+        tools:layout="@layout/fragment_profil_fotografi" >
+        <action
+            android:id="@+id/action_profilFotografi_to_anaProfil"
+            app:destination="@id/anaProfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilAyarlari"
+        android:name="app.ilet.profilAyarlari"
+        android:label="fragment_profil_ayarlari"
+        tools:layout="@layout/fragment_profil_ayarlari" >
+        <action
+            android:id="@+id/action_profilAyarlari_to_ayarlar"
+            app:destination="@id/ayarlar" />
+    </fragment>
+    <fragment
+        android:id="@+id/yolda"
+        android:name="app.ilet.yolda"
+        android:label="fragment_yolda"
+        tools:layout="@layout/fragment_yolda" />
+    <fragment
+        android:id="@+id/ayarlar"
+        android:name="app.ilet.ayarlar"
+        android:label="fragment_ayarlar"
+        tools:layout="@layout/fragment_ayarlar" >
+        <action
+            android:id="@+id/action_ayarlar_to_profilAyarlari"
+            app:destination="@id/profilAyarlari" />
+        <action
+            android:id="@+id/action_ayarlar_to_kullanimSartlari"
+            app:destination="@id/kullanimSartlari" />
+        <action
+            android:id="@+id/action_ayarlar_to_gizlilikPolitikasi"
+            app:destination="@id/gizlilikPolitikasi" />
+        <action
+            android:id="@+id/action_ayarlar_to_sss"
+            app:destination="@id/sss" />
+        <action
+            android:id="@+id/action_ayarlar_to_iletHakkinda"
+            app:destination="@id/iletHakkinda" />
+    </fragment>
+    <fragment
+        android:id="@+id/sss"
+        android:name="app.ilet.sss"
+        android:label="fragment_sss"
+        tools:layout="@layout/fragment_sss" >
+        <action
+            android:id="@+id/action_sss_to_ayarlar"
+            app:destination="@id/ayarlar" />
+    </fragment>
+    <fragment
+        android:id="@+id/gizlilikPolitikasi"
+        android:name="app.ilet.gizlilikPolitikasi"
+        android:label="fragment_gizlilik_politikasi"
+        tools:layout="@layout/fragment_gizlilik_politikasi" >
+        <action
+            android:id="@+id/action_gizlilikPolitikasi_to_ayarlar"
+            app:destination="@id/ayarlar" />
+    </fragment>
+    <fragment
+        android:id="@+id/kullanimSartlari"
+        android:name="app.ilet.kullanimSartlari"
+        android:label="fragment_kullanim_sartlari"
+        tools:layout="@layout/fragment_kullanim_sartlari" >
+        <action
+            android:id="@+id/action_kullanimSartlari_to_ayarlar"
+            app:destination="@id/ayarlar" />
+    </fragment>
+    <fragment
+        android:id="@+id/gecmisYolculuk"
+        android:name="app.ilet.gecmisYolculuk"
+        android:label="fragment_gecmis_yolculuk"
+        tools:layout="@layout/fragment_gecmis_yolculuk" />
+    <fragment
+        android:id="@+id/gelecekYolculuk"
+        android:name="app.ilet.gelecekYolculuk"
+        android:label="fragment_gelecek_yolculuk"
+        tools:layout="@layout/fragment_gelecek_yolculuk" />
+    <fragment
+        android:id="@+id/iletHakkinda"
+        android:name="app.ilet.iletHakkinda"
+        android:label="fragment_ilet_hakkinda"
+        tools:layout="@layout/fragment_ilet_hakkinda" />
+</navigation>

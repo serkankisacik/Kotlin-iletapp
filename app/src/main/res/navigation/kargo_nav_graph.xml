@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kargo_nav_graph"
+    app:startDestination="@id/ilanlar">
+
+    <fragment
+        android:id="@+id/ilanlar"
+        android:name="app.ilet.ilanlar"
+        android:label="fragment_ilanlar"
+        tools:layout="@layout/fragment_ilanlar" >
+        <action
+            android:id="@+id/action_ilanlar_to_ilanKonum"
+            app:destination="@id/ilanKonum" />
+        <action
+            android:id="@+id/action_ilanlar_to_ilanDetay"
+            app:destination="@id/ilanDetay" />
+    </fragment>
+    <fragment
+        android:id="@+id/ilanDetay"
+        android:name="app.ilet.ilanDetay"
+        android:label="fragment_ilan_detay"
+        tools:layout="@layout/fragment_ilan_detay" />
+    <fragment
+        android:id="@+id/ilanKonum"
+        android:name="app.ilet.ilanKonum"
+        android:label="fragment_ilan_konum"
+        tools:layout="@layout/fragment_ilan_konum" >
+        <action
+            android:id="@+id/action_ilanKonum_to_ilanDetayEkle"
+            app:destination="@id/ilanDetayEkle" />
+    </fragment>
+    <fragment
+        android:id="@+id/ilanDetayEkle"
+        android:name="app.ilet.ilanDetayEkle"
+        android:label="fragment_ilan_detay_ekle"
+        tools:layout="@layout/fragment_ilan_detay_ekle" >
+        <action
+            android:id="@+id/action_ilanDetayEkle_to_ilanDurakEkle"
+            app:destination="@id/ilanDurakEkle" />
+    </fragment>
+    <fragment
+        android:id="@+id/ilanDurakEkle"
+        android:name="app.ilet.ilanDurakEkle"
+        android:label="fragment_ilan_durak_ekle"
+        tools:layout="@layout/fragment_ilan_durak_ekle" >
+        <action
+            android:id="@+id/action_ilanDurakEkle_to_ilanOnay"
+            app:destination="@id/ilanOnay" />
+    </fragment>
+    <fragment
+        android:id="@+id/ilanOnay"
+        android:name="app.ilet.ilanOnay"
+        android:label="fragment_ilan_onay"
+        tools:layout="@layout/fragment_ilan_onay" />
+</navigation>

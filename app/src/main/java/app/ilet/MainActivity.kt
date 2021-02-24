@@ -12,8 +12,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun gitGiris( view: View){
-
         val intent = Intent(applicationContext,giris::class.java)
+        startActivity(intent)
+    }
+    fun gitProfil( view: View){
+        val intent = Intent(applicationContext,ProfilActivity::class.java)
         startActivity(intent)
     }
 }

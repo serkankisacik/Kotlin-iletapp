@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/acilisFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/acilisFragment"
@@ -42,7 +42,11 @@
         android:id="@+id/hosgeldiniz"
         android:name="app.ilet.hosgeldiniz"
         android:label="fragment_hosgeldiniz"
-        tools:layout="@layout/fragment_hosgeldiniz" />
+        tools:layout="@layout/fragment_hosgeldiniz" >
+        <action
+            android:id="@+id/action_hosgeldiniz_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
     <fragment
         android:id="@+id/hesabiKurtar"
         android:name="app.ilet.hesabiKurtar"
@@ -79,5 +83,23 @@
         android:id="@+id/kilavuz3"
         android:name="app.ilet.kilavuz3"
         android:label="fragment_kilavuz3"
-        tools:layout="@layout/fragment_kilavuz3" />
+        tools:layout="@layout/fragment_kilavuz3" >
+        <action
+            android:id="@+id/action_kilavuz3_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="app.ilet.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_acilisFragment"
+            app:destination="@id/acilisFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="app.ilet.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 </navigation>

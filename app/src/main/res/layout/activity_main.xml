@@ -69,6 +69,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="53dp"
+        android:onClick="gitProfil"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewMessafe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewMap"
