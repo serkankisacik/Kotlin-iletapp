@@ -1,14 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ilanlar">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textViewIlanlarBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/g_nderici_lanlar"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIlanlarAra"
+        app:layout_constraintEnd_toEndOf="@+id/editTextIlanlarAra" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/editTextIlanlarAra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="@string/bir_ehrin_ad_n_girin"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/koyuGri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <ImageView
+        android:id="@+id/imageAramaKonum"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/konum"
+        android:src="@drawable/ortanoktayesil"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextIlanlarAra"
+        app:layout_constraintStart_toStartOf="@+id/editTextIlanlarAra"
+        app:layout_constraintTop_toTopOf="@+id/editTextIlanlarAra" />
+
+    <ImageView
+        android:id="@+id/imageTicketArka"
+        android:layout_width="380dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/ticket_arkas_g_rseli"
+        android:src="@drawable/arkaplanorjinaltransparan30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageTicketPFoto"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="266dp"
+        android:contentDescription="@string/kullan_c_profil_foto_raf"
+        android:src="@drawable/pf"
+        app:layout_constraintEnd_toStartOf="@+id/textCikisSure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageTicketArka" />
+
+    <TextView
+        android:id="@+id/textCikisKonum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="74dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/isparta"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textVarisKonum"
+        app:layout_constraintStart_toEndOf="@+id/imageIlanlarIcon"
+        app:layout_constraintTop_toTopOf="@+id/imageTicketArka" />
+
+    <TextView
+        android:id="@+id/textKullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="187dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/esra"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textCikisTarih"
+        app:layout_constraintStart_toEndOf="@+id/imageTicketPFoto"
+        app:layout_constraintTop_toTopOf="@+id/imageTicketPFoto" />
+
+    <TextView
+        android:id="@+id/textCikisSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/_12_saat"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageTicketPFoto"
+        app:layout_constraintTop_toBottomOf="@+id/textCikisTarih" />
+
+    <TextView
+        android:id="@+id/textCikisTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/_25_ubat_2021"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textKullaniciAdi"
+        app:layout_constraintTop_toTopOf="@+id/imageTicketArka" />
+
+    <TextView
+        android:id="@+id/textVarisKonum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/karab_k"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCikisKonum"
+        app:layout_constraintTop_toTopOf="@+id/textCikisKonum" />
+
+    <ImageView
+        android:id="@+id/imageIlanlarUcNokta"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:contentDescription="@string/nokta"
+        android:src="@drawable/beyazucnokta"
+        app:layout_constraintStart_toEndOf="@+id/textCikisKonum"
+        app:layout_constraintTop_toTopOf="@+id/textCikisKonum" />
+
+    <ImageView
+        android:id="@+id/imageIlanlarIcon"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="160dp"
+        android:contentDescription="@string/araba_conu_beyaz"
+        android:src="@drawable/arababeyaz"
+        app:layout_constraintEnd_toStartOf="@+id/textCikisKonum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textCikisKonum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

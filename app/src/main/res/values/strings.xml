@@ -76,6 +76,16 @@
     <string name="ticket_arkaplan">Ticket Arkaplan</string>
     <string name="k_noktasi_simgesi">Çıkış Noktasi Simgesi</string>
     <string name="kullan_c_y_ld_zlar">Kullanıcı Yıldızları</string>
-    <string name="kullan_c_profil_foto_raf">Kullanıcı Profil Fotoğrafı</string>
     <string name="let_logo">İlet Logo</string>
+    <string name="g_nderici_lanlar">Gönderici İlanları</string>
+    <string name="bir_ehrin_ad_n_girin">Bir şehrin adını girin.</string>
+    <string name="isparta">ISPARTA</string>
+    <string name="esra">Esra</string>
+    <string name="_12_saat">12 Saat</string>
+    <string name="_25_ubat_2021">25 Şubat 2021</string>
+    <string name="konum">Konum</string>
+    <string name="kullan_c_profil_foto_raf">Kullanıcı Profil Fotoğrafı</string>
+    <string name="nokta">Üç Nokta</string>
+    <string name="araba_conu_beyaz">Araba İconu Beyaz</string>
+    <string name="ticket_arkas_g_rseli">Ticket arkası görseli</string>
 </resources>
