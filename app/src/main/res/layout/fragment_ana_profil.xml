@@ -8,13 +8,14 @@
 
     <ImageView
         android:id="@+id/imageViewYolDurum"
-        android:layout_width="750dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="27dp"
+        android:layout_width="412dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="@string/ticket_arkaplan"
-        android:src="@drawable/cikisvarisdusukx"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-170dp" />
+        android:src="@drawable/arkaplanorjinaltransparan30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewGeziSure"

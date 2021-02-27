@@ -1,14 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ilanDurakEkle">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textViewGE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/gezini_ekleyelim"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textViewGE3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/duraklar"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGE2" />
+
+    <TextView
+        android:id="@+id/textViewGE4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/adana"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewGE3"
+        app:layout_constraintTop_toTopOf="@+id/textViewGE5" />
+
+    <TextView
+        android:id="@+id/textViewGE5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="29dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/karab_k"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/ba_lang_konumu"
+        android:src="@drawable/mappinyesil"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGE4"
+        app:layout_constraintTop_toTopOf="@+id/textViewGE4" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/hedef_konumu"
+        android:src="@drawable/varisnokta"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGE5"
+        app:layout_constraintTop_toTopOf="@+id/textViewGE5" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/durak"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        android:autofillHints="" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="43dp"
+        android:contentDescription="@string/durak_ekleme"
+        android:src="@drawable/artiyesil"
+        app:layout_constraintEnd_toEndOf="@+id/textViewGE3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/yolculu_unuz_s_ras_nda_durup_kargo_transferi_yapabilece_iniz_duraklar_ekleyebilirsiniz"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGE4" />
+
+    <Button
+        android:id="@+id/buttonGESonrakiSyf3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bosbuton"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sonraki"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/Yesil"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="660dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

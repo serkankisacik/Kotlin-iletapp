@@ -19,19 +19,20 @@
 
     <EditText
         android:id="@+id/editTextIlanlarAra"
-        android:layout_width="0dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="15dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/bir_ehrin_ad_n_girin"
         android:inputType="textPersonName"
         android:textColorHint="@color/koyuGri"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageAramaKonum"
@@ -40,7 +41,7 @@
         android:contentDescription="@string/konum"
         android:src="@drawable/ortanoktayesil"
         app:layout_constraintBottom_toBottomOf="@+id/editTextIlanlarAra"
-        app:layout_constraintStart_toStartOf="@+id/editTextIlanlarAra"
+        app:layout_constraintEnd_toStartOf="@+id/editTextIlanlarAra"
         app:layout_constraintTop_toTopOf="@+id/editTextIlanlarAra" />
 
     <ImageView
@@ -147,5 +148,15 @@
         app:layout_constraintEnd_toStartOf="@+id/textCikisKonum"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textCikisKonum" />
+
+    <ImageView
+        android:id="@+id/imageIlanEkle"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ekleme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

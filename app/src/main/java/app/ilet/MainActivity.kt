@@ -19,4 +19,8 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(applicationContext,ProfilActivity::class.java)
         startActivity(intent)
     }
+    fun gitKargo( view: View){
+        val intent = Intent(applicationContext,KargoActivity::class.java)
+        startActivity(intent)
+    }
 }

@@ -1,14 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ilanKonum">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textViewGE1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="46dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/gezini_ekleyelim"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageIcoPin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textViewGEn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/nereye"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGENereye"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIcoPin" />
+
+    <TextView
+        android:id="@+id/textViewGEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/nereden"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGEn2"
+        app:layout_constraintStart_toStartOf="@+id/textViewGEn2" />
+
+    <ImageView
+        android:id="@+id/imageIcoPin"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="14dp"
+        android:contentDescription="@string/ba_lang_iconu"
+        android:src="@drawable/mappinpembe"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGEn2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGEn"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGE1" />
+
+    <ImageView
+        android:id="@+id/imageIcoVaris"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:contentDescription="@string/var_iconu"
+        android:src="@drawable/ortanoktayesil"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewGEn2"
+        app:layout_constraintStart_toStartOf="@+id/imageIcoPin" />
+
+    <EditText
+        android:id="@+id/editTextGENereden"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="@string/ba_lang_konumunuz"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Gri"
+        app:layout_constraintBottom_toTopOf="@+id/editTextGENereye"
+        app:layout_constraintStart_toEndOf="@+id/textViewGEn"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextGENereye"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="@string/biti_konumunuz"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Gri"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewGEn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGEn2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGEn2"
+        android:autofillHints="" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGESonraki1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGEn2" />
+
+    <Button
+        android:id="@+id/buttonGESonraki1"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/bosbuton"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sonraki"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/Yesil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

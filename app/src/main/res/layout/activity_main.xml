@@ -58,6 +58,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="50dp"
+        android:onClick="gitKargo"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewUser"
         app:layout_constraintEnd_toStartOf="@+id/imageViewUser"
         app:layout_constraintStart_toEndOf="@+id/imageViewMessafe"

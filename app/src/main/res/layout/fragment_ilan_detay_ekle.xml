@@ -1,14 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ilanDetayEkle">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textViewGEn15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/tahmini_s_re"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewGEn13"
+        app:layout_constraintTop_toTopOf="@+id/editTextTime" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textViewGEn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/nereye"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGENereye4"
+        app:layout_constraintStart_toEndOf="@+id/imageIcoVaris4"
+        app:layout_constraintTop_toTopOf="@+id/editTextGENereye4" />
+
+    <TextView
+        android:id="@+id/textViewGEn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/arac"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGEArac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextGEArac" />
+
+    <TextView
+        android:id="@+id/textViewGEn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/kargo_t_r"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/imageIcoVaris5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGEn9" />
+
+    <TextView
+        android:id="@+id/textViewGEn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/gezi_t_r"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewGEn10"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGEn10" />
+
+    <TextView
+        android:id="@+id/textViewGEn12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/varis"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDateVaris"
+        app:layout_constraintTop_toTopOf="@+id/editTextDateVaris" />
+
+    <TextView
+        android:id="@+id/textViewGEn14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/cikis"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDateCikis"
+        app:layout_constraintTop_toTopOf="@+id/editTextDateCikis" />
+
+    <TextView
+        android:id="@+id/textViewGEn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/tarih"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewGEn11"
+        app:layout_constraintTop_toTopOf="@+id/editTextDateCikis" />
+
+    <ImageView
+        android:id="@+id/imageIcoVaris4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/var_iconu"
+        android:src="@drawable/ortanoktayesil"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGEn8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewGEn8" />
+
+    <ImageView
+        android:id="@+id/imageIcoVaris5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/var_iconu"
+        android:src="@drawable/arabayesil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewGEn9" />
+
+    <EditText
+        android:id="@+id/editTextGENereye4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="@string/biti_konumunuz"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Gri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGEn8"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGENereden4" />
+
+    <EditText
+        android:id="@+id/editTextGEArac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="@string/hangi_ara_ile_gideceksin"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Gri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGEn9"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGENereye4" />
+
+    <EditText
+        android:id="@+id/editTextGENereden4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="@string/ba_lang_konumunuz"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/Gri"
+        app:layout_constraintStart_toStartOf="@+id/editTextGENereye4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGE" />
+
+    <TextView
+        android:id="@+id/textViewGEn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/nereden"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextGENereden4"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGENereden4" />
+
+    <ImageView
+        android:id="@+id/imageIcoPin4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/ba_lang_iconu"
+        android:src="@drawable/mappinpembe"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGEn7"
+        app:layout_constraintTop_toTopOf="@+id/textViewGEn7" />
+
+    <TextView
+        android:id="@+id/textViewGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="46dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/gezini_ekleyelim"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageIcoPin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDosya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/dosya"
+        app:layout_constraintStart_toStartOf="@+id/editTextGEArac"
+        app:layout_constraintTop_toTopOf="@+id/textViewGEn10" />
+
+    <CheckBox
+        android:id="@+id/checkBoxKoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/koli"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDosya"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxDosya" />
+
+    <RadioButton
+        android:id="@+id/radioButtonGEis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/is"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxDosya"
+        app:layout_constraintTop_toTopOf="@+id/textViewGEn11" />
+
+    <RadioButton
+        android:id="@+id/radioButtonGEtatil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/tatil"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonGEis"
+        app:layout_constraintTop_toTopOf="@+id/radioButtonGEis" />
+
+    <RadioButton
+        android:id="@+id/radioButtonGEtasinma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/ta_nma"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonGEtatil"
+        app:layout_constraintTop_toTopOf="@+id/radioButtonGEtatil" />
+
+    <EditText
+        android:id="@+id/editTextDateCikis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/radioButtonGEtasinma"
+        app:layout_constraintStart_toEndOf="@+id/textViewGEn15"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonGEis"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextDateVaris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDateCikis"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDateCikis"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="@+id/editTextDateVaris"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDateVaris"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/buttonGEsyf2Sonraki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/bosbuton"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sonraki"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/Yesil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

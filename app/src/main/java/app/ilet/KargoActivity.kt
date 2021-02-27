@@ -8,4 +8,5 @@ class KargoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kargo)
     }
+
 }
