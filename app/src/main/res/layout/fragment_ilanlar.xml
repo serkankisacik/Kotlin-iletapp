@@ -153,10 +153,10 @@
         android:id="@+id/imageIlanEkle"
         android:layout_width="85dp"
         android:layout_height="110dp"
+        android:contentDescription="@string/lan_ekleme_butonu"
         android:src="@drawable/ekleme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="TODO" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

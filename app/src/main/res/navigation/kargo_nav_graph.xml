@@ -21,7 +21,11 @@
         android:id="@+id/ilanDetay"
         android:name="app.ilet.ilanDetay"
         android:label="fragment_ilan_detay"
-        tools:layout="@layout/fragment_ilan_detay" />
+        tools:layout="@layout/fragment_ilan_detay" >
+        <action
+            android:id="@+id/action_ilanDetay_to_ilanlar"
+            app:destination="@id/ilanlar" />
+    </fragment>
     <fragment
         android:id="@+id/ilanKonum"
         android:name="app.ilet.ilanKonum"

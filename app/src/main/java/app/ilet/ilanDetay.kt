@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_ayarlar.*
+import kotlinx.android.synthetic.main.fragment_ilan_detay.*
 
 class ilanDetay : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,5 +20,13 @@ class ilanDetay : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_ilan_detay, container, false)
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        imageViewIDKapat.setOnClickListener {
+            val action = ilanDetayDirections.actionİlanDetayToİlanlar()
+            Navigation.findNavController(it).navigate(action)
+        }
     }
 }

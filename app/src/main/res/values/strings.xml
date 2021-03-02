@@ -116,4 +116,12 @@
     <string name="ba_lang_konumu">Başlangıç konumu</string>
     <string name="hedef_konumu">Hedef Konumu</string>
     <string name="durak_ekleme">Durak Ekleme</string>
+    <string name="mesaj_at">Mesaj At</string>
+    <string name="merhaba_ben_s_la_zmir_den_bart_n_a_zel_arac_m_ile_gidiyorum_fazla_yerim_yok_k_k_boyutlarda_kargolar_n_z_iletebilirim">Merhaba ben Sıla İzmir\'den Bartın\'a özel aracım ile gidiyorum. Fazla yerim yok küçük boyutlarda kargolarınızı iletebilirim.</string>
+    <string name="ba_lang">Başlangıç</string>
+    <string name="lan_detay_arkaplan_g_rseli">İlan Detayı arkaplan görseli</string>
+    <string name="lan_detay_profil_foto_raf">İlan Detay profil fotoğrafı</string>
+    <string name="lan_detay_araba_iconu">İlan detay araba iconu</string>
+    <string name="lan_detay_nokta">İlan detay üç nokta</string>
+    <string name="lan_ekleme_butonu">İlan ekleme Butonu</string>
 </resources>

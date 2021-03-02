@@ -1,14 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ilanDetay">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/imageViewKargoGorsel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="540dp"
+        android:contentDescription="@string/lan_detay_arkaplan_g_rseli"
+        android:src="@drawable/kargotasiyan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <View
+        android:id="@+id/viewIlanArka"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMesajAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/butonturuncu"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/mesaj_at"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/KoyuMor"
+        app:layout_constraintBottom_toTopOf="@+id/viewIlanArka"
+        app:layout_constraintStart_toEndOf="@+id/textViewHedef"
+        app:layout_constraintTop_toTopOf="@+id/viewIlanArka" />
+
+    <TextView
+        android:id="@+id/textViewHedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/KoyuMor"
+        android:text="@string/hedef_konumu"
+        android:textColor="@color/Yesil"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewIlanArka"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIDBaslangic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/KoyuMor"
+        android:text="@string/ba_lang"
+        android:textColor="@color/Yesil"
+        android:textColorHighlight="@color/Yesil"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPFIlanDetay"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIlanDetayi" />
+
+    <TextView
+        android:id="@+id/textViewIDHedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/KoyuMor"
+        android:text="@string/hedef_konumu"
+        android:textColor="@color/Yesil"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewIDBaslangic" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciAdID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/KoyuMor"
+        android:text="@string/kullan_c_ad"
+        android:textColor="@color/KoyuMor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPFIlanDetay"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPFIlanDetay" />
+
+    <TextView
+        android:id="@+id/textViewDetayTarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:shadowColor="@color/KoyuMor"
+        android:text="@string/_25_ubat_2021"
+        android:textColor="@color/KoyuMor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewIlanArka" />
+
+    <TextView
+        android:id="@+id/textViewYolDurum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/KoyuMor"
+        android:text="@string/yolunda"
+        android:textColor="@color/Turuncu"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewIlanArka"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPFIlanDetay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/lan_detay_profil_foto_raf"
+        android:src="@drawable/pf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewIlanArka" />
+
+    <TextView
+        android:id="@+id/textViewIlanDetayi"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/merhaba_ben_s_la_zmir_den_bart_n_a_zel_arac_m_ile_gidiyorum_fazla_yerim_yok_k_k_boyutlarda_kargolar_n_z_iletebilirim"
+        android:textColor="@color/koyuGri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKargoGorsel" />
+
+    <ImageView
+        android:id="@+id/imageViewIDicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/lan_detay_araba_iconu"
+        android:src="@drawable/arabayesil"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIDBaslangic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewIDBaslangic" />
+
+    <ImageView
+        android:id="@+id/imageViewIDUcnokta"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/lan_detay_nokta"
+        android:src="@drawable/ucnoktayesil"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewIDHedef"
+        app:layout_constraintEnd_toStartOf="@+id/textViewIDHedef"
+        app:layout_constraintStart_toEndOf="@+id/textViewIDBaslangic"
+        app:layout_constraintTop_toTopOf="@+id/textViewIDHedef" />
+
+    <ImageView
+        android:id="@+id/imageViewIDKapat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/cikis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

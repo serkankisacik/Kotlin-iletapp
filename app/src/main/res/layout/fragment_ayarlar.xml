@@ -122,59 +122,59 @@
         android:layout_height="34dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
+        android:contentDescription="@string/parmak_zi"
         android:src="@drawable/beyazoksaga"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAyarlar"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAyarlar" />
 
     <ImageView
         android:id="@+id/imageViewDondur"
         android:layout_width="25dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/hesab_dondur"
         android:src="@drawable/beyazoksaga"
         app:layout_constraintEnd_toEndOf="@+id/imageViewParmak"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewParmak"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewParmak" />
 
     <ImageView
         android:id="@+id/imageViewSart"
         android:layout_width="25dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/kullan_m_artlar"
         android:src="@drawable/beyazoksaga"
         app:layout_constraintEnd_toEndOf="@+id/imageViewParmak"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewDondur"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDondur" />
 
     <ImageView
         android:id="@+id/imageViewGizlilik"
         android:layout_width="25dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/gizlilik_poliitikasi"
         android:src="@drawable/beyazoksaga"
         app:layout_constraintEnd_toEndOf="@+id/imageViewSart"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewSart"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSart" />
 
     <ImageView
         android:id="@+id/imageViewSSS"
         android:layout_width="25dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/s_k_sorulan_sorular"
         android:src="@drawable/beyazoksaga"
         app:layout_constraintEnd_toEndOf="@+id/imageViewGizlilik"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewGizlilik"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewGizlilik" />
 
     <ImageView
         android:id="@+id/imageViewHakkimizda"
         android:layout_width="25dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/let_hakk_nda"
         android:src="@drawable/beyazoksaga"
         app:layout_constraintEnd_toEndOf="@+id/imageViewSSS"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewSSS"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSSS" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -40,5 +40,27 @@ class ayarlar : Fragment() {
             val action = ayarlarDirections.actionAyarlarToİletHakkinda()
             Navigation.findNavController(it).navigate(action)
         }
+        textViewAyar2.setOnClickListener {
+
+        }
+        textViewAyar4.setOnClickListener {
+
+        }
+        textViewAyar5.setOnClickListener {
+            val action = ayarlarDirections.actionAyarlarToKullanimSartlari()
+            Navigation.findNavController(it).navigate(action)
+        }
+        textViewAyar6.setOnClickListener {
+            val action = ayarlarDirections.actionAyarlarToGizlilikPolitikasi()
+            Navigation.findNavController(it).navigate(action)
+        }
+        textViewAyar8.setOnClickListener {
+            val action = ayarlarDirections.actionAyarlarToSss()
+            Navigation.findNavController(it).navigate(action)
+        }
+        textViewAyar3.setOnClickListener {
+            val action = ayarlarDirections.actionAyarlarToİletHakkinda()
+            Navigation.findNavController(it).navigate(action)
+        }
     }
 }

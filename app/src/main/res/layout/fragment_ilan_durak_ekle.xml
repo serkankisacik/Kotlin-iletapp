@@ -77,14 +77,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/durak"
         android:inputType="textPersonName"
-        android:text="@string/name"
         android:textColorHint="#FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="@+id/imageView11"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -112,12 +111,14 @@
         android:id="@+id/buttonGESonrakiSyf3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/bosbuton"
         android:fontFamily="@font/poppins_bold"
-        android:text="Sonraki"
+        android:text="@string/sonraki"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/Yesil"
-        tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="660dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,6 +26,10 @@ class ilanlar : Fragment() {
         imageIlanEkle.setOnClickListener {
             val action = ilanlarDirections.actionİlanlarToİlanKonum()
             Navigation.findNavController(it).navigate(action)
-            }
+        }
+        imageTicketArka.setOnClickListener {
+            val action = ilanlarDirections.actionİlanlarToİlanDetay()
+            Navigation.findNavController(it).navigate(action)
+        }
     }
 }

@@ -70,12 +70,12 @@
         android:text="@string/devam_et"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/txtSenDEgilMisin"
-        app:layout_constraintStart_toStartOf="@+id/txtSenDEgilMisin"
+        app:layout_constraintBottom_toTopOf="@+id/txtSenDegilMisin"
+        app:layout_constraintStart_toStartOf="@+id/txtSenDegilMisin"
         app:layout_constraintTop_toBottomOf="@+id/txtKullaniciIsmi" />
 
     <TextView
-        android:id="@+id/txtSenDEgilMisin"
+        android:id="@+id/txtSenDegilMisin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="26dp"
