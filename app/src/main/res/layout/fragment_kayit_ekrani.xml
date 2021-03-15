@@ -8,7 +8,7 @@
 
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/editTextKayitIsim"
+        android:id="@+id/editTextKayitKullaniciAdi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
@@ -43,7 +43,7 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextKayitSifre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextKayitIsim" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextKayitKullaniciAdi" />
 
     <EditText
         android:id="@+id/editTextKayitSifre"

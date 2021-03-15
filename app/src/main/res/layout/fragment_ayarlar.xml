@@ -7,6 +7,29 @@
     tools:context=".ayarlar">
 
     <TextView
+        android:id="@+id/textViewProfilAyar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Profi ayarları"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAyar3" />
+
+    <ImageView
+        android:id="@+id/imageViewProfilAyar"
+        android:layout_width="25dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/parmak_zi"
+        android:src="@drawable/beyazoksaga"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewHakkimizda"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHakkimizda" />
+
+    <TextView
         android:id="@+id/textViewAyarlar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

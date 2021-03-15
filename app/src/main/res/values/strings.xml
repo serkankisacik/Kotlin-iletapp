@@ -124,4 +124,5 @@
     <string name="lan_detay_araba_iconu">İlan detay araba iconu</string>
     <string name="lan_detay_nokta">İlan detay üç nokta</string>
     <string name="lan_ekleme_butonu">İlan ekleme Butonu</string>
+    <string name="e_posta_adresi">E-posta adresi</string>
 </resources>

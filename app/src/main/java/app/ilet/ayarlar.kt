@@ -47,6 +47,10 @@ class ayarlar : Fragment() {
             val action = ayarlarDirections.actionAyarlarToİletHakkinda()
             Navigation.findNavController(it).navigate(action)
         }
+        imageViewProfilAyar.setOnClickListener {
+            val action = ayarlarDirections.actionAyarlarToProfilAyarlari()
+            Navigation.findNavController(it).navigate(action)
+        }
         textViewAyar2.setOnClickListener {
 
         }
@@ -75,5 +79,12 @@ class ayarlar : Fragment() {
             val action = ayarlarDirections.actionAyarlarToMainActivity2()
             Navigation.findNavController(it).navigate(action)
         }
+
+        textViewProfilAyar.setOnClickListener {
+
+            val action = ayarlarDirections.actionAyarlarToProfilAyarlari()
+            Navigation.findNavController(it).navigate(action)
+        }
+
     }
 }

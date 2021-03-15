@@ -43,9 +43,10 @@ class girisEkrani : Fragment() {
                 auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task->
                     if(task.isSuccessful)
                     {
-                        val guncelKullanici = auth.currentUser?.email.toString()
+                        val currentuser = auth.currentUser?.displayName.toString()
 
-                        Toast.makeText(activity, "Hoş geldin: ${guncelKullanici}Başarı ile giriş yaptınız", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(activity, "Hoş geldin: ${currentuser}Başarı ile giriş yaptınız", Toast.LENGTH_SHORT).show()
+
                         val action = girisEkraniDirections.actionGirisEkraniToHosgeldiniz()
                         Navigation.findNavController(it).navigate(action)
                     }

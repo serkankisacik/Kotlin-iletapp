@@ -1,6 +1,8 @@
 package app.ilet
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -9,9 +11,9 @@ import android.widget.Toast
 import androidx.navigation.Navigation
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.auth.ktx.oAuthCredential
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_kayit_ekrani.*
+import com.google.firebase.auth.ktx.userProfileChangeRequest as userProfileChangeRequest
 
 class kayitEkrani : Fragment() {
     private lateinit var auth: FirebaseAuth
@@ -34,7 +36,7 @@ class kayitEkrani : Fragment() {
 
         btnKayitKaydol.setOnClickListener {
 
-            val name = editTextKayitIsim.text.toString()
+            val username = editTextKayitKullaniciAdi.text.toString()
             val email= editTextKayitEposta.text.toString()
             val password = editTextKayitSifre.text.toString()
 
