@@ -6,12 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_acilis.*
 import kotlinx.android.synthetic.main.fragment_ayarlar.*
 
 class ayarlar : Fragment() {
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        auth = Firebase.auth
+
     }
 
     override fun onCreateView(
@@ -60,6 +67,12 @@ class ayarlar : Fragment() {
         }
         textViewAyar3.setOnClickListener {
             val action = ayarlarDirections.actionAyarlarToİletHakkinda()
+            Navigation.findNavController(it).navigate(action)
+        }
+
+        textViewCikisYap.setOnClickListener {
+            auth.signOut()
+            val action = ayarlarDirections.actionAyarlarToMainActivity2()
             Navigation.findNavController(it).navigate(action)
         }
     }

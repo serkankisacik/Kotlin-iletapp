@@ -69,6 +69,9 @@
         <action
             android:id="@+id/action_ayarlar_to_iletHakkinda"
             app:destination="@id/iletHakkinda" />
+        <action
+            android:id="@+id/action_ayarlar_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
     <fragment
         android:id="@+id/sss"
@@ -112,4 +115,9 @@
         android:name="app.ilet.iletHakkinda"
         android:label="fragment_ilet_hakkinda"
         tools:layout="@layout/fragment_ilet_hakkinda" />
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="app.ilet.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 </navigation>

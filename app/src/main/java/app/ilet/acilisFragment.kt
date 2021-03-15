@@ -24,6 +24,7 @@ class acilisFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         btnUyeol.setOnClickListener {
             val action = acilisFragmentDirections.actionAcilisFragmentToKayitEkrani()
+
             Navigation.findNavController(it).navigate(action)
        }
         btnGirisYap.setOnClickListener {

@@ -5,12 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.Navigation
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_giris_ekrani.*
 
 class girisEkrani : Fragment() {
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        auth = Firebase.auth
     }
 
     override fun onCreateView(
@@ -29,8 +36,25 @@ class girisEkrani : Fragment() {
         }
 
         btnOturumAc.setOnClickListener {
-            val action = girisEkraniDirections.actionGirisEkraniToHosgeldiniz()
-            Navigation.findNavController(it).navigate(action)
+
+            val email = editTexteposta.text.toString()
+            val password = editTextSifre.text.toString()
+            if(password !="" && email !=""){
+                auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task->
+                    if(task.isSuccessful)
+                    {
+                        val guncelKullanici = auth.currentUser?.email.toString()
+
+                        Toast.makeText(activity, "Hoş geldin: ${guncelKullanici}Başarı ile giriş yaptınız", Toast.LENGTH_SHORT).show()
+                        val action = girisEkraniDirections.actionGirisEkraniToHosgeldiniz()
+                        Navigation.findNavController(it).navigate(action)
+                    }
+                }.addOnFailureListener { exception->
+                    Toast.makeText(activity, exception.localizedMessage, Toast.LENGTH_SHORT).show()
+                }
+            }else{
+                Toast.makeText(activity, "Lütfen istenilen alanları doldurunuz.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

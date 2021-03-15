@@ -5,12 +5,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.Navigation
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.auth.ktx.oAuthCredential
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_kayit_ekrani.*
 
 class kayitEkrani : Fragment() {
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        auth = Firebase.auth
     }
 
     override fun onCreateView(
@@ -25,10 +33,20 @@ class kayitEkrani : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btnKayitKaydol.setOnClickListener {
-            // TODO: Abbas kanka burada giriş yapmayı felan denesene
 
-            val action = kayitEkraniDirections.actionKayitEkraniToKayitTelefon()
-            Navigation.findNavController(it).navigate(action)
+            val name = editTextKayitIsim.text.toString()
+            val email= editTextKayitEposta.text.toString()
+            val password = editTextKayitSifre.text.toString()
+
+            auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
+                if (task.isSuccessful){
+                    Toast.makeText(activity, "Kullanıcı başarı ile oluşturuldu", Toast.LENGTH_SHORT).show()
+                    val action = kayitEkraniDirections.actionKayitEkraniToKayitTelefon()
+                    Navigation.findNavController(it).navigate(action)
+                }
+            }.addOnFailureListener { exception->
+                Toast.makeText(activity, exception.localizedMessage, Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
