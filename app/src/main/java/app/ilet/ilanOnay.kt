@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_ilan_detay_ekle.*
+import kotlinx.android.synthetic.main.fragment_ilan_konum.*
+import kotlinx.android.synthetic.main.fragment_ilan_onay.*
 
 class ilanOnay : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,5 +21,11 @@ class ilanOnay : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_ilan_onay, container, false)
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        buttonGEOnay.setOnClickListener {
+
+        }
     }
 }

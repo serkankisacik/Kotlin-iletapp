@@ -73,7 +73,7 @@
         app:layout_constraintTop_toTopOf="@+id/textViewGE5" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextGEDurak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"

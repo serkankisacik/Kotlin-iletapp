@@ -14,7 +14,7 @@
         android:text="@string/tahmini_s_re"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textViewGEn13"
-        app:layout_constraintTop_toTopOf="@+id/editTextTime" />
+        app:layout_constraintTop_toTopOf="@+id/editTextSure" />
 
     <TextView
         android:id="@+id/textViewGEn8"
@@ -24,9 +24,9 @@
         android:fontFamily="@font/poppins"
         android:text="@string/nereye"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextGENereye4"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGENereye2"
         app:layout_constraintStart_toEndOf="@+id/imageIcoVaris4"
-        app:layout_constraintTop_toTopOf="@+id/editTextGENereye4" />
+        app:layout_constraintTop_toTopOf="@+id/editTextGENereye2" />
 
     <TextView
         android:id="@+id/textViewGEn9"
@@ -120,7 +120,7 @@
         app:layout_constraintTop_toTopOf="@+id/textViewGEn9" />
 
     <EditText
-        android:id="@+id/editTextGENereye4"
+        android:id="@+id/editTextGENereye2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -134,7 +134,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewGEn8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextGENereden4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextGENereden2" />
 
     <EditText
         android:id="@+id/editTextGEArac"
@@ -151,10 +151,10 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewGEn9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextGENereye4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextGENereye2" />
 
     <EditText
-        android:id="@+id/editTextGENereden4"
+        android:id="@+id/editTextGENereden2"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -165,7 +165,7 @@
         android:inputType="textPersonName"
         android:textColorHint="@color/Gri"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextGENereye4"
+        app:layout_constraintStart_toStartOf="@+id/editTextGENereye2"
         app:layout_constraintTop_toBottomOf="@+id/textViewGE" />
 
     <TextView
@@ -176,8 +176,8 @@
         android:fontFamily="@font/poppins"
         android:text="@string/nereden"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextGENereden4"
-        app:layout_constraintEnd_toStartOf="@+id/editTextGENereden4" />
+        app:layout_constraintBottom_toBottomOf="@+id/editTextGENereden2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGENereden2" />
 
     <ImageView
         android:id="@+id/imageIcoPin4"
@@ -282,7 +282,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextDateCikis" />
 
     <EditText
-        android:id="@+id/editTextTime"
+        android:id="@+id/editTextSure"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
