@@ -58,7 +58,7 @@
         android:id="@+id/textViewOnayVaris"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="43dp"
+        android:layout_marginEnd="72dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Tahmini varış"
         android:textSize="18sp"

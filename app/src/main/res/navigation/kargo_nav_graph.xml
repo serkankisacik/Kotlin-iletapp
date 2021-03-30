@@ -57,5 +57,9 @@
         android:id="@+id/ilanOnay"
         android:name="app.ilet.ilanOnay"
         android:label="fragment_ilan_onay"
-        tools:layout="@layout/fragment_ilan_onay" />
+        tools:layout="@layout/fragment_ilan_onay" >
+        <action
+            android:id="@+id/action_ilanOnay_to_ilanlar"
+            app:destination="@id/ilanlar" />
+    </fragment>
 </navigation>
