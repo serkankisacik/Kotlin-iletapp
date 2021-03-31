@@ -4,25 +4,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
-import app.ilet.databinding.ActivityGirisBinding
+import app.ilet.databinding.ActivityKargoBinding
 import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_ilan_detay_ekle.*
 import kotlinx.android.synthetic.main.fragment_ilan_durak_ekle.*
-import kotlinx.android.synthetic.main.fragment_ilan_konum.*
 import kotlinx.android.synthetic.main.fragment_ilan_onay.*
 
 
 class ilanOnay : Fragment() {
     private lateinit var auth: FirebaseAuth
-    lateinit var binding: ActivityGirisBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -36,9 +31,9 @@ class ilanOnay : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        var database = FirebaseDatabase.getInstance().reference
         auth = Firebase.auth
         buttonGEOnay.setOnClickListener {
+            val database = FirebaseDatabase.getInstance().reference
             var nereden = editTextGENereden2.text.toString()
             var nereye = editTextGENereye2.text.toString()
             var arac = editTextGEArac.text.toString()
@@ -48,9 +43,9 @@ class ilanOnay : Fragment() {
             var durak = editTextGEDurak.toString()
             var sure = editTextSure.toString()
             var kullanici = auth.currentUser!!.displayName.toString()
-            val kullaniciid = auth.currentUser.tenantId.toString().toInt()
+            val kullaniciid = auth.currentUser.tenantId.toString()
 
-            database.setValue(Travel(nereden,nereye,arac,olusturma,cikis,varis,durak,sure,kullanici,kullaniciid))
+            database.setValue(Travel(nereden, nereye, arac, olusturma, cikis, varis, durak, sure, kullanici, kullaniciid))
         }
     }
 }

@@ -14,9 +14,9 @@ class Travel {
     var estimatedTime:String = ""
     var stations:String = ""
     var userName:String = ""
-    var userId:Int = 0
+    var userId:String = ""
 
-    constructor(startPosition:String, finishPosition:String, userVehicle:String, createDate:String, arrivalDate:String, departureDate:String, estimatedTime:String, stations:String, userName:String, userId:Int){
+    constructor(startPosition:String, finishPosition:String, userVehicle:String, createDate:String, arrivalDate:String, departureDate:String, estimatedTime:String, stations:String, userName:String, userId:String){
         this.startPosition = startPosition
         this.finishPosition = finishPosition
         this.userVehicle = userVehicle
