@@ -5,10 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import app.ilet.databinding.ActivityKargoBinding
 import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_ilan_detay_ekle.*
@@ -45,7 +45,10 @@ class ilanOnay : Fragment() {
             var kullanici = auth.currentUser!!.displayName.toString()
             val kullaniciid = auth.currentUser.tenantId.toString()
 
-            database.setValue(Travel(nereden, nereye, arac, olusturma, cikis, varis, durak, sure, kullanici, kullaniciid))
+            val database2 = FirebaseDatabase.getInstance()
+            val myRef: DatabaseReference = database2.getReference("Travels")
+
+            myRef.setValue(Travel(nereden, nereye, arac, olusturma, cikis, varis, durak, sure, kullanici, kullaniciid))
         }
     }
 }
