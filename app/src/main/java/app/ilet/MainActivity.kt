@@ -36,4 +36,8 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(applicationContext,KargoActivity::class.java)
         startActivity(intent)
     }
+    fun gitSohbet( view: View){
+        val intent = Intent(applicationContext,mesajlar::class.java)
+        startActivity(intent)
+    }
 }

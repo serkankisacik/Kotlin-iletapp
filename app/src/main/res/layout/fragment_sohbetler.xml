@@ -61,8 +61,8 @@
 
     <ImageView
         android:id="@+id/imageViewSohbetlerGeri"
-        android:layout_width="50dp"
-        android:layout_height="0dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="49dp"
         android:layout_marginEnd="16dp"
@@ -181,8 +181,8 @@
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="32dp"
         android:src="@drawable/evyesil"
@@ -191,8 +191,8 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="32dp"
         android:src="@drawable/mesajyesil"
         app:layout_constraintStart_toEndOf="@+id/imageView16"
@@ -200,8 +200,8 @@
 
     <ImageView
         android:id="@+id/imageView18"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="32dp"
         android:src="@drawable/mappinyesil"
         app:layout_constraintStart_toEndOf="@+id/imageView17"
@@ -209,7 +209,7 @@
 
     <ImageView
         android:id="@+id/imageView19"
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"

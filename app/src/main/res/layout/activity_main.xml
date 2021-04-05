@@ -10,72 +10,59 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="356dp"
-        android:layout_marginBottom="300dp"
         android:text="@string/ana_sayfaya_ho_geldiniz"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewMessafe"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="356dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="32dp"
         android:onClick="gitGiris"
         android:text="@string/giri_fragmenti"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="144dp" />
 
     <ImageView
         android:id="@+id/imageViewMessafe"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewMap"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:onClick="gitSohbet"
         app:layout_constraintStart_toEndOf="@+id/imageViewHome"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewHome"
         app:srcCompat="@drawable/mesajyesil" />
 
     <ImageView
         android:id="@+id/imageViewHome"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewMessafe"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewMessafe"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageViewMessafe"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/evyesil" />
 
     <ImageView
         android:id="@+id/imageViewUser"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="53dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
         android:onClick="gitProfil"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewMessafe"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewMap"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/imageViewMap"
         app:srcCompat="@drawable/kullaniciyesil" />
 
     <ImageView
         android:id="@+id/imageViewMap"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
         android:onClick="gitKargo"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewUser"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewUser"
         app:layout_constraintStart_toEndOf="@+id/imageViewMessafe"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/imageViewMessafe"
         app:srcCompat="@drawable/mappinyesil" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
