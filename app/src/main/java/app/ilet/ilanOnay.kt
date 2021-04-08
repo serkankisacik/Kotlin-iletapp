@@ -30,25 +30,6 @@ class ilanOnay : Fragment() {
         return inflater.inflate(R.layout.fragment_ilan_onay, container, false)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        auth = Firebase.auth
-        buttonGEOnay.setOnClickListener {
-            val database = FirebaseDatabase.getInstance().reference
-            var nereden = editTextGENereden2.text.toString()
-            var nereye = editTextGENereye2.text.toString()
-            var arac = editTextGEArac.text.toString()
-            var olusturma = Timestamp.now().toString()
-            var cikis = editTextDateCikis.toString()
-            var varis = editTextDateVaris.toString()
-            var durak = editTextGEDurak.toString()
-            var sure = editTextSure.toString()
-            var kullanici = auth.currentUser!!.displayName.toString()
-            val kullaniciid = auth.currentUser.tenantId.toString()
 
-            val database2 = FirebaseDatabase.getInstance()
-            val myRef: DatabaseReference = database2.getReference("Travels")
-
-            myRef.setValue(Travel(nereden, nereye, arac, olusturma, cikis, varis, durak, sure, kullanici, kullaniciid))
-        }
     }
 }

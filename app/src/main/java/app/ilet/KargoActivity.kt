@@ -2,6 +2,7 @@ package app.ilet
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import app.ilet.databinding.ActivityKargoBinding
 import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
@@ -15,5 +16,8 @@ class KargoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kargo)
+    }
+
+    fun seyahatKayit(view: View){
     }
 }
