@@ -23,9 +23,6 @@ class ilanDetayEkle : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        buttonGEsyf2Sonraki.setOnClickListener {
-            val action = ilanDetayEkleDirections.actionİlanDetayEkleToİlanDurakEkle()
-            Navigation.findNavController(it).navigate(action)
-        }
+
     }
 }

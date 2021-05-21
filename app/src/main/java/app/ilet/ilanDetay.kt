@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_ayarlar.*
 import kotlinx.android.synthetic.main.fragment_ilan_detay.*
+import kotlinx.android.synthetic.main.fragment_ilan_detay_ekle.*
 
 class ilanDetay : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,9 +25,5 @@ class ilanDetay : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        imageViewIDKapat.setOnClickListener {
-            val action = ilanDetayDirections.actionİlanDetayToİlanlar()
-            Navigation.findNavController(it).navigate(action)
-        }
     }
 }

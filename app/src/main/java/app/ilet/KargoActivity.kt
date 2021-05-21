@@ -18,6 +18,4 @@ class KargoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_kargo)
     }
 
-    fun seyahatKayit(view: View){
-    }
 }

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".kullanimSartlari">
 
@@ -15,6 +16,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/k"
+        android:textColor="@color/KoyuMor"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,6 +29,7 @@
         android:layout_marginBottom="19dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/kullan_m_artlar"
+        android:textColor="@color/KoyuMor"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewKSbir"
         app:layout_constraintStart_toStartOf="parent" />
@@ -39,6 +42,7 @@
         android:layout_marginBottom="129dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/t_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
+        android:textColor="@color/KoyuMor"
         app:layout_constraintBottom_toBottomOf="@+id/textViewKSiki"
         app:layout_constraintEnd_toEndOf="@+id/textViewKSiki"
         app:layout_constraintStart_toStartOf="@+id/textViewKSiki"
@@ -53,6 +57,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/poppins"
         android:text="@string/t_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
+        android:textColor="@color/KoyuMor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

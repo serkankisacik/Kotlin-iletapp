@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".acilisFragment">
 
     <ImageView
@@ -23,9 +24,9 @@
         android:id="@+id/iletGirisLogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="43dp"
+        android:layout_marginStart="42dp"
         android:layout_marginTop="42dp"
-        android:layout_marginEnd="43dp"
+        android:layout_marginEnd="42dp"
         android:layout_marginBottom="26dp"
         android:contentDescription="@string/let"
         android:src="@drawable/ilet_high"

@@ -32,4 +32,6 @@ class ilanlar : Fragment() {
             Navigation.findNavController(it).navigate(action)
         }
     }
+
+
 }
