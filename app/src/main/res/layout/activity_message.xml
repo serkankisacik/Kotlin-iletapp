@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context=".Activity.MessageActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="30dp"
+                android:src="@drawable/user"
+                android:layout_height="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Kullanıcı"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/bottom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="#404040"
+            >
+
+
+            <EditText
+                android:id="@+id/text_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:maxLines="10"
+                android:textColor="#000"
+                android:hint="Bir şey yaz..."
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:gravity="left"
+                android:padding="10dp" />
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+
+            android:background="@drawable/send" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

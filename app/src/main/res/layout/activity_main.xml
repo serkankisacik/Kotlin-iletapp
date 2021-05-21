@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -20,10 +21,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:visibility="gone"
         android:onClick="gitGiris"
         android:text="@string/giri_fragmenti"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="144dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/liste"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="wrap_content"/>
 
     <ImageView
         android:id="@+id/imageViewMessafe"
@@ -64,5 +72,15 @@
         app:layout_constraintStart_toEndOf="@+id/imageViewMessafe"
         app:layout_constraintTop_toTopOf="@+id/imageViewMessafe"
         app:srcCompat="@drawable/mappinyesil" />
+
+    <ImageView
+        android:id="@+id/postadd"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:onClick="postAdd"
+        app:layout_constraintStart_toEndOf="@+id/imageViewUser"
+        app:layout_constraintTop_toTopOf="@+id/imageViewUser"
+        app:srcCompat="@drawable/add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

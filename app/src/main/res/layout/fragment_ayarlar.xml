@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ayarlar">
 
     <TextView
@@ -13,8 +14,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Profi ayarları"
-        android:textColor="#FFFFFF"
+        android:text="Profil ayarları"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAyar3" />
@@ -37,6 +38,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/ayarlar"
+        android:textColor="@color/KoyuMor"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +50,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/gizlilik_politikas"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textViewAyar5"
         app:layout_constraintTop_toBottomOf="@+id/textViewAyar5" />
@@ -60,7 +62,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/s_k_sorulan_sorular"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textViewAyar5"
         app:layout_constraintTop_toBottomOf="@+id/textViewAyar6" />
@@ -72,7 +74,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/kullan_m_artlar"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textViewAyar4"
         app:layout_constraintTop_toBottomOf="@+id/textViewAyar4" />
@@ -85,7 +87,7 @@
         android:layout_marginTop="112dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/parmak_zi"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -97,7 +99,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/let_hakk_nda"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textViewAyar8"
         app:layout_constraintTop_toBottomOf="@+id/textViewAyar8" />
@@ -110,7 +112,7 @@
         android:layout_marginTop="100dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/gizli_hesap"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAyar3" />
@@ -123,7 +125,7 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Çıkış yap"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -135,7 +137,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/_2fa"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textViewAyar"
         app:layout_constraintTop_toBottomOf="@+id/textViewAyar" />
@@ -147,7 +149,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/hesab_dondur"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textViewAyar2"
         app:layout_constraintTop_toBottomOf="@+id/textViewAyar2" />

@@ -15,6 +15,7 @@
         android:layout_marginTop="93dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/s_k_sorulan_sorular"
+        android:textColor="@color/KoyuMor"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,6 +29,7 @@
         android:layout_marginBottom="122dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sss"
+        android:textColor="@color/KoyuMor"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewCevapBir"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,6 +43,7 @@
         android:layout_marginTop="6dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/bu_uygulama_gizlili_imi_nas_l_koruyor"
+        android:textColor="@color/KoyuMor"
         app:layout_constraintStart_toStartOf="@+id/textViewSssorular"
         app:layout_constraintTop_toBottomOf="@+id/textViewSssorular" />
 
@@ -53,6 +56,7 @@
         android:layout_marginBottom="49dp"
         android:fontFamily="@font/poppins"
         android:text="@string/it_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
+        android:textColor="@color/KoyuMor"
         app:layout_constraintBottom_toTopOf="@+id/textViewAciklamabir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +69,7 @@
         android:layout_marginStart="17dp"
         android:layout_marginBottom="341dp"
         android:text="@string/buraya_expandable_recyclerview_tarz_nda_bir_ey_ayp_lacak"
+        android:textColor="@color/KoyuMor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCevapBir" />

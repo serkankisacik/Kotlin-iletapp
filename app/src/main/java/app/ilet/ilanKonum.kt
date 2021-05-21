@@ -24,8 +24,7 @@ class ilanKonum : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         buttonGESonraki1.setOnClickListener {
-            val action = ilanKonumDirections.actionİlanKonumToİlanDetayEkle()
-            Navigation.findNavController(it).navigate(action)
+
         }
     }
 }

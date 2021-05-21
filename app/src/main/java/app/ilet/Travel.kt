@@ -4,6 +4,7 @@ import com.google.firebase.Timestamp
 import kotlinx.android.synthetic.main.fragment_ilan_detay_ekle.*
 import kotlinx.android.synthetic.main.fragment_ilan_durak_ekle.*
 
+
 class Travel {
     var startPosition:String = ""
     var finishPosition:String = ""

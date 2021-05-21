@@ -25,8 +25,8 @@ class ilanDetay : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         imageViewIDKapat.setOnClickListener {
-            val action = ilanDetayDirections.actionİlanDetayToİlanlar()
-            Navigation.findNavController(it).navigate(action)
+          //  val action = ilanDetayDirections.actionIlanDetayToIlanlar()
+          //  Navigation.findNavController(it).navigate(action)
         }
     }
 }
