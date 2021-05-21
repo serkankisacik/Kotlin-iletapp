@@ -26,6 +26,13 @@ class ilanDetayEkle : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> e79e532142d5e1fa09000a654b63e1073a9a484d
+>>>>>>> b46cda6febf2c65be089da02bfc88488e51317fa
     }
 }
