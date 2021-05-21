@@ -16,4 +16,42 @@
     <color name="Turuncu">#D95E52</color>
     <color name="Kahverengi">#D99B77</color>
     <color name="Mor">#732240</color>
+
+
+    <color name="Edittext">#2f4f4f</color>
+
+    <color name="back">#79cdcd</color>
+    <color name="user">#77000000</color>
+    <color name="profil_back">#232323</color>
+
+    <color name="Buton_Giris">#363636</color>
+
+    <color name="cyan">#00ffff</color>
+    <color name="dark">#000000</color>
+
+    <color name="phone">#992f4f4f</color>
+    <color name="hint">#7777e8e8</color>
+    <color name="biz_bulduk">#77e8e8</color>
+    <color name="sayac">#2f4f4f</color>
+
+    <color name="karsila">#2f4f4f</color>
+    <color name="yazi">#ffffff</color>
+    <color name="girdi">#660E06F8</color>
+
+    <color name="gel">#2f4f4f</color>
+    <color name="git">#4a804d</color>
+
+    <color name="O_son_mes">#00ffff</color>
+    <color name="giden_son_mes">#808080</color>
+    <color name="Y_son_mes">#66ff00</color>
+
+    <color name="gelen">#FF5722</color>
+
+    <color name="netflix">#e50914</color>
+    <color name="Snetflix">#99e50914</color>
+    <color name="exxen">#feca07</color>
+
+    <color name="ilerleme">#908f8f</color>
+
+    <color name="Traans">#00ffffff</color>
 </resources>

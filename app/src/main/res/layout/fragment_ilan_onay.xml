@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".ilanOnay">
 
@@ -14,6 +16,7 @@
         android:layout_marginEnd="72dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/kabul_et"
+        android:textColor="@color/KoyuMor"
         app:layout_constraintEnd_toEndOf="@+id/buttonGEOnay"
         app:layout_constraintTop_toTopOf="@+id/checkBoxKoli2" />
 
@@ -25,6 +28,7 @@
         android:layout_marginBottom="120dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/kabul_et"
+        android:textColor="@color/KoyuMor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -50,6 +54,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Yola çıkış"
+        android:textColor="@color/Mor"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textViewOnayNereden"
         app:layout_constraintTop_toBottomOf="@+id/textViewOnayNereden" />
@@ -61,6 +66,7 @@
         android:layout_marginEnd="72dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Tahmini varış"
+        android:textColor="@color/Mor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewOnayCikisT" />
@@ -72,6 +78,7 @@
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/nereye"
+        android:textColor="@color/KoyuMor"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewOnayNereden" />
@@ -84,7 +91,22 @@
         android:layout_marginTop="100dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/nereden"
+        android:textColor="@color/KoyuMor"
         android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textDeneme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/KoyuMor"
+        android:textColorHint="@color/Mor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
