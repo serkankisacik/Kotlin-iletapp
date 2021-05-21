@@ -24,7 +24,10 @@ class ilanKonum : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         buttonGESonraki1.setOnClickListener {
+<<<<<<< HEAD
 
+=======
+>>>>>>> e79e532142d5e1fa09000a654b63e1073a9a484d
         }
     }
 }
