@@ -3,20 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="app.ilet">
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> b46cda6febf2c65be089da02bfc88488e51317fa
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
 
-<<<<<<< HEAD
-=======
-=======
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
->>>>>>> e79e532142d5e1fa09000a654b63e1073a9a484d
->>>>>>> b46cda6febf2c65be089da02bfc88488e51317fa
     <application
         android:allowBackup="true"
         android:appComponentFactory="whateverString"
@@ -24,22 +14,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> b46cda6febf2c65be089da02bfc88488e51317fa
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:replace="android:appComponentFactory">
+        <activity android:name=".PaymentQRActivity"></activity>
+        <activity android:name=".sendOffer" />
         <activity android:name=".Activity.ChatList" />
         <activity android:name=".postSet" />
         <activity android:name=".Activity.MessageActivity" />
-<<<<<<< HEAD
-=======
-=======
-        android:theme="@style/Theme.AppCompat.NoActionBar">
->>>>>>> e79e532142d5e1fa09000a654b63e1073a9a484d
->>>>>>> b46cda6febf2c65be089da02bfc88488e51317fa
-        <activity android:name=".mesajlar" />
         <activity android:name=".KargoActivity" />
         <activity android:name=".ProfilActivity" />
         <activity android:name=".giris" />

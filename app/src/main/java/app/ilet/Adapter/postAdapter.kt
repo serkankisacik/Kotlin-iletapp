@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import app.ilet.Activity.MessageActivity
 import app.ilet.Model.Post
 import app.ilet.R
+import app.ilet.sendOffer
 
 
 class poatAdapter(mcontex : Context,postListt: List<Post>) :
@@ -27,12 +28,14 @@ class poatAdapter(mcontex : Context,postListt: List<Post>) :
         var mesaj: TextView
         var user: TextView
         var root: LinearLayout
+        var price: TextView
 
         init {
             baslik = v.findViewById(R.id.baslik)
             mesaj = v.findViewById(R.id.post)
             user = v.findViewById(R.id.user)
             root = v.findViewById(R.id.root)
+            price = v.findViewById(R.id.priceText)
 
         }
     }
@@ -61,7 +64,13 @@ class poatAdapter(mcontex : Context,postListt: List<Post>) :
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             mContex.startActivity(intent)
         })
-
+        holder.price.setText(postList[position].price)
+        holder.price.setOnClickListener {
+            val intent = Intent(mContex, sendOffer::class.java)
+            intent.putExtra("price", postList[position].price)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            mContex.startActivity(intent)
+        }
     }
 
     // Return the size of your dataset (invoked by the layout manager)

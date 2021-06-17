@@ -17,7 +17,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="başik"
+            android:layout_gravity="top|center"
+            android:text="Başlık"
             android:textColor="@color/KoyuMor"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -39,8 +40,9 @@
             android:layout_marginBottom="50dp"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:text="başlik"
+            android:text="Seyahat Bilgisi"
             android:textColor="@color/KoyuMor" />
+
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -51,6 +53,7 @@
             android:layout_marginBottom="30dp"
             android:background="@color/black" />
 
+
         <LinearLayout
             android:id="@+id/root"
             android:layout_width="wrap_content"
@@ -60,9 +63,9 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/arababeyaz" />
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/kullaniciyesil" />
 
             <TextView
                 android:id="@+id/user"
@@ -70,10 +73,29 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center"
-                android:text="Araç"
+                android:text="Kullanıcı"
                 android:textColor="@color/KoyuMor" />
-
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Ücret"
+            android:textColor="@color/KoyuMor" />
+
+        <TextView
+            android:id="@+id/priceText2"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Ücret"
+            android:textColor="@color/KoyuMor" />
 
 
     </FrameLayout>

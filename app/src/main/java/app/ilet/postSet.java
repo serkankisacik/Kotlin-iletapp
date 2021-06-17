@@ -17,7 +17,7 @@ import app.ilet.Model.Post;
 
 public class postSet extends AppCompatActivity {
 
-    EditText baslik, mesaj, user;
+    EditText baslik, mesaj, user, price;
 
 
     @Override
@@ -28,7 +28,7 @@ public class postSet extends AppCompatActivity {
         baslik = findViewById(R.id.baslik);
         mesaj = findViewById(R.id.post);
         user = findViewById(R.id.user);
-
+        price = findViewById(R.id.pricePost);
     }
 
     public void paylas(View v) {
@@ -38,8 +38,9 @@ public class postSet extends AppCompatActivity {
             String sm = mesaj.getText().toString();
             String sb = baslik.getText().toString();
             String su = user.getText().toString();
+            String sp = price.getText().toString();
             final FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-            Post p = new Post(sb,sm,su,firebaseUser.getUid());
+            Post p = new Post(sb,sm,su, firebaseUser.getUid(),sp);
             myRef.push().setValue(p);
             finish();
             Toast.makeText(getApplicationContext(),"İlanınız Yayınlandı.",Toast.LENGTH_LONG).show();

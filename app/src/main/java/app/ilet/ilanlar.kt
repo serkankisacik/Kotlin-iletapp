@@ -23,14 +23,7 @@ class ilanlar : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        imageIlanEkle.setOnClickListener {
-            val action = ilanlarDirections.actionİlanlarToİlanKonum()
-            Navigation.findNavController(it).navigate(action)
-        }
-        imageTicketArka.setOnClickListener {
-            val action = ilanlarDirections.actionİlanlarToİlanDetay()
-            Navigation.findNavController(it).navigate(action)
-        }
+
     }
 
 

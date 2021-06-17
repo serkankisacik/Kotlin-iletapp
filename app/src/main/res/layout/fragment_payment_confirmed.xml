@@ -4,26 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaymentConfirmed"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".PaymentConfirmed">
 
 
     <TextView
         android:id="@+id/paymentConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Ödeme Onaylandı"
         android:textColor="@color/KoyuMor"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="230dp" />
+        app:layout_constraintBottom_toTopOf="@+id/splash"
+        app:layout_constraintEnd_toEndOf="@+id/splash"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/splash"
         android:layout_width="350dp"
-        android:layout_height="250dp"
-        android:layout_marginBottom="148dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="172dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

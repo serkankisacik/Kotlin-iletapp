@@ -52,6 +52,12 @@
 
         </androidx.appcompat.widget.Toolbar>
 
+        <Button
+            android:id="@+id/btnSendOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teklif Gönder" />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -61,7 +67,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottom"
-        android:layout_below="@id/bar_layout" />
+        android:layout_below="@id/bar_layout"
+        android:background="@color/Gri" />
 
     <RelativeLayout
         android:id="@+id/bottom"
