@@ -3,9 +3,9 @@ package app.ilet
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class mesajlar : AppCompatActivity() {
+class PaymentQRActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mesajlar)
+        setContentView(R.layout.activity_payment_qractivity)
     }
 }

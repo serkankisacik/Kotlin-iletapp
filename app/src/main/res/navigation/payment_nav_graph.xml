@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_nav_graph"
+    app:startDestination="@id/paymentConfirmed">
+
+    <fragment
+        android:id="@+id/paymentConfirmed"
+        android:name="app.ilet.PaymentConfirmed"
+        android:label="fragment_payment_confirmed"
+        tools:layout="@layout/fragment_payment_confirmed" >
+        <action
+            android:id="@+id/action_paymentConfirmed_to_createQR"
+            app:destination="@id/createQR" />
+    </fragment>
+    <fragment
+        android:id="@+id/createQR"
+        android:name="app.ilet.CreateQR"
+        android:label="fragment_create_q_r"
+        tools:layout="@layout/fragment_create_q_r" />
+</navigation>
