@@ -67,11 +67,35 @@
         android:layout_marginStart="26dp"
         android:layout_marginTop="47dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="@string/serkan"
+        android:text="Kullanıcı Adı"
         android:textColor="@color/KoyuMor"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewYolDurum" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciAd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="x Değerlendirme "
+        android:textColor="@color/KoyuMor"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewYildiz"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciAd" />
+
+    <TextView
+        android:id="@+id/textViewKullaniciAd3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="x Yorum"
+        android:textColor="@color/KoyuMor"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewYildiz"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciAd" />
 
     <TextView
         android:id="@+id/textViewKullaniciKm"
@@ -82,7 +106,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/_2335_km"
         android:textColor="@color/KoyuMor"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewYildiz" />
 
@@ -96,7 +120,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/nceki_geziler"
         android:textColor="@color/KoyuMor"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewYildiz" />
@@ -108,7 +132,7 @@
         android:fontFamily="@font/poppins_light"
         android:text="@string/son_12_ayda_yapt_geziler"
         android:textColor="@color/KoyuMor"
-        android:textSize="8sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/textViewKullaniciOG"
         app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciOG" />
 
@@ -120,7 +144,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sonraki_hedef"
         android:textColor="@color/KoyuMor"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonDuzenle"
         app:layout_constraintTop_toTopOf="@+id/imageViewUcak" />
 
@@ -131,7 +155,7 @@
         android:fontFamily="@font/poppins_light"
         android:text="@string/karab_k"
         android:textColor="@color/KoyuMor"
-        android:textSize="8sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/textViewKullaniciSH"
         app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciSH" />
 
@@ -142,7 +166,7 @@
         android:fontFamily="@font/poppins_light"
         android:text="@string/toplam_mesafe"
         android:textColor="@color/KoyuMor"
-        android:textSize="8sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/textViewKullaniciKm"
         app:layout_constraintTop_toBottomOf="@+id/textViewKullaniciKm" />
 
@@ -211,8 +235,8 @@
 
     <ImageView
         android:id="@+id/imageViewKullaniciFotograf"
-        android:layout_width="61dp"
-        android:layout_height="62dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="76dp"
         android:layout_marginEnd="27dp"

@@ -36,7 +36,6 @@ class girisEkrani : Fragment() {
         }
 
         btnOturumAc.setOnClickListener {
-
             val email = editTexteposta.text.toString()
             val password = editTextSifre.text.toString()
             if(password !="" && email !=""){
@@ -44,9 +43,7 @@ class girisEkrani : Fragment() {
                     if(task.isSuccessful)
                     {
                         val currentuser = auth.currentUser?.displayName.toString()
-
                         Toast.makeText(activity, "Hoş geldin: ${currentuser} Başarı ile giriş yaptınız", Toast.LENGTH_SHORT).show()
-
                         val action = girisEkraniDirections.actionGirisEkraniToHosgeldiniz()
                         Navigation.findNavController(it).navigate(action)
                     }

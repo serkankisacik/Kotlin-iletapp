@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_kilavuz1.*
 import kotlinx.android.synthetic.main.fragment_kilavuz2.*
 
 class kilavuz2 : Fragment() {
@@ -20,7 +21,6 @@ class kilavuz2 : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_kilavuz2, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         btnkilavuzikiSonraki.setOnClickListener {

@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         notificationManager.cancelAll()
         val currentUser = auth.currentUser
         if (currentUser == null) {
-
             val intent = Intent(applicationContext, giris::class.java)
             startActivity(intent)
         }
@@ -57,11 +56,6 @@ class MainActivity : AppCompatActivity() {
         reference.addValueEventListener(postListener)
 
 
-    }
-
-    fun gitGiris(view: View) {
-        val intent = Intent(applicationContext, giris::class.java)
-        startActivity(intent)
     }
 
     fun gitProfil(view: View) {

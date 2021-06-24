@@ -15,8 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
-        tools:replace="android:appComponentFactory">
-        <activity android:name=".PaymentQRActivity"></activity>
+        tools:replace="android:appComponentFactory"
+        tools:targetApi="p">
+        <activity android:name=".PaymentQRActivity"/>
         <activity android:name=".sendOffer" />
         <activity android:name=".Activity.ChatList" />
         <activity android:name=".postSet" />

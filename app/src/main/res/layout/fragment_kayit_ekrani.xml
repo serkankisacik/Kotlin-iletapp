@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -81,4 +82,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextKayitSifre" />
+
+    <CheckBox
+        android:id="@+id/checkBoxKS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/kullan_m_artlar"
+        android:textColor="@color/KoyuMor"
+        android:textColorHint="@color/KoyuMor"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/gizlilik_poliitikasi"
+        android:textColor="@color/KoyuMor"
+        android:textColorHint="@color/KoyuMor"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxKS"
+        tools:layout_editor_absoluteX="242dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

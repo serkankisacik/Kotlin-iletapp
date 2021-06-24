@@ -37,6 +37,12 @@
         <action
             android:id="@+id/action_kayitEkrani_to_kayitTelefon"
             app:destination="@id/kayitTelefon" />
+        <action
+            android:id="@+id/action_kayitEkrani_to_gizlilikPolitikasi2"
+            app:destination="@id/gizlilikPolitikasi2" />
+        <action
+            android:id="@+id/action_kayitEkrani_to_kullanimSartlari2"
+            app:destination="@id/kullanimSartlari2" />
     </fragment>
     <fragment
         android:id="@+id/hosgeldiniz"
@@ -69,6 +75,9 @@
         <action
             android:id="@+id/action_kilavuz1_to_kilavuz2"
             app:destination="@id/kilavuz2" />
+        <action
+            android:id="@+id/action_kilavuz1_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/kilavuz2"
@@ -78,6 +87,9 @@
         <action
             android:id="@+id/action_kilavuz2_to_kilavuz3"
             app:destination="@id/kilavuz3" />
+        <action
+            android:id="@+id/action_kilavuz2_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/kilavuz3"
@@ -102,4 +114,22 @@
         android:name="app.ilet.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/kullanimSartlari2"
+        android:name="app.ilet.kullanimSartlari"
+        android:label="fragment_kullanim_sartlari"
+        tools:layout="@layout/fragment_kullanim_sartlari" >
+        <action
+            android:id="@+id/action_kullanimSartlari2_to_kayitEkrani"
+            app:destination="@id/kayitEkrani" />
+    </fragment>
+    <fragment
+        android:id="@+id/gizlilikPolitikasi2"
+        android:name="app.ilet.gizlilikPolitikasi"
+        android:label="fragment_gizlilik_politikasi"
+        tools:layout="@layout/fragment_gizlilik_politikasi" >
+        <action
+            android:id="@+id/action_gizlilikPolitikasi2_to_kayitEkrani"
+            app:destination="@id/kayitEkrani" />
+    </fragment>
 </navigation>

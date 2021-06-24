@@ -65,14 +65,12 @@ class ilanOnay : Fragment() {
                     yuklenenGorselReference.downloadUrl.addOnSuccessListener { uri->
                         val downloadUrl = uri.toString()
                         val guncelKullaniciEmail = auth.currentUser!!.email.toString()
-                        val kullaniciBirbilgi = textDeneme.text.toString()
                         val tarih = Timestamp.now()
                         //veritabanı işlemleri
 
                         val postHashMap = hashMapOf<String, Any>()
                         postHashMap.put("gorselurl", "try")
                         postHashMap.put("kullaniciemail", guncelKullaniciEmail)
-                        postHashMap.put("kullaniciDeneme", kullaniciBirbilgi)
                         postHashMap.put("tarih", tarih)
 
                         db.collection("Deneme")

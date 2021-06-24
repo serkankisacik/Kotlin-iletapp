@@ -57,5 +57,15 @@ class kayitEkrani : Fragment() {
                 Toast.makeText(activity, exception.localizedMessage, Toast.LENGTH_SHORT).show()
             }
         }
+
+        checkBoxGP.setOnClickListener {
+            val action = kayitEkraniDirections.actionKayitEkraniToGizlilikPolitikasi2()
+            Navigation.findNavController(it).navigate(action)
+        }
+
+        checkBoxKS.setOnClickListener {
+            val action = kayitEkraniDirections.actionKayitEkraniToKullanimSartlari2()
+            Navigation.findNavController(it).navigate(action)
+        }
     }
 }

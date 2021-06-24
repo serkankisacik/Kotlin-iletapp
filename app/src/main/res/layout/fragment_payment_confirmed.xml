@@ -19,12 +19,12 @@
         android:text="Ödeme Onaylandı"
         android:textColor="@color/KoyuMor"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/splash"
-        app:layout_constraintEnd_toEndOf="@+id/splash"
+        app:layout_constraintBottom_toTopOf="@+id/splashgiris"
+        app:layout_constraintEnd_toEndOf="@+id/splashgiris"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/splash"
+        android:id="@+id/splashgiris"
         android:layout_width="350dp"
         android:layout_height="0dp"
         android:layout_marginBottom="172dp"

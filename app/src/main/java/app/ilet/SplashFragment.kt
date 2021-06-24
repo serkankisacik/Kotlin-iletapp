@@ -24,6 +24,12 @@ class SplashFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        splashgiris.setOnClickListener {
+            val action = SplashFragmentDirections.actionSplashFragmentToAcilisFragment()
+            Navigation.findNavController(it).navigate(action)
+        }
+
         buttonSplashDevam.setOnClickListener {
             val action = SplashFragmentDirections.actionSplashFragmentToAcilisFragment()
             Navigation.findNavController(it).navigate(action)

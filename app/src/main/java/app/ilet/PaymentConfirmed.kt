@@ -6,8 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import kotlinx.android.synthetic.main.fragment_create_q_r.*
-import kotlinx.android.synthetic.main.fragment_kilavuz1.*
+import kotlinx.android.synthetic.main.fragment_payment_confirmed.*
 
 class PaymentConfirmed : Fragment() {
 
@@ -26,8 +25,8 @@ class PaymentConfirmed : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        paymentConfirm.setOnClickListener {
-            val action = PaymentConfirmedDirections.actionPaymentConfirmedToCreateQR()
+        splashgiris.setOnClickListener{
+            var action = PaymentConfirmedDirections.actionPaymentConfirmedToCreateQR()
             Navigation.findNavController(it).navigate(action)
         }
     }

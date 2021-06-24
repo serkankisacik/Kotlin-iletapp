@@ -18,4 +18,5 @@ class gizlilikPolitikasi : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_gizlilik_politikasi, container, false)
     }
+
 }

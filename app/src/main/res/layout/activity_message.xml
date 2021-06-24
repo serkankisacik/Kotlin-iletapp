@@ -56,6 +56,7 @@
             android:id="@+id/btnSendOffer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/butonyesilgenis"
             android:text="Teklif Gönder" />
 
 

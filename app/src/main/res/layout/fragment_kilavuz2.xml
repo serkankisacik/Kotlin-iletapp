@@ -13,24 +13,17 @@
         android:id="@+id/imageView4"
         android:layout_width="500dp"
         android:layout_height="400dp"
-        android:layout_marginTop="115dp"
-        android:layout_marginBottom="40dp"
         android:src="@drawable/gorselgonder"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:layout_editor_absoluteX="-45dp" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="178dp"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
         android:layout_marginTop="48dp"
-        android:layout_marginEnd="115dp"
         android:src="@drawable/noktalariki"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,58 +31,51 @@
         android:id="@+id/btnkilavuzGonder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="2dp"
         android:background="@drawable/butonturuncu"
         android:fontFamily="@font/poppins_bold"
         android:text="Gönder"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Atla"
-        android:textColor="#9F9F9F"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="98dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/atla"
+        android:textColor="#2E0D19"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="1dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Keşfet"
         android:textAlignment="center"
         android:textColor="#2E0D19"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="@+id/btnkilavuzGonder"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/btnkilavuzGonder" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Gezilerini ve alabilecekleri yükleri belirleyen diğer kullanıcıların kargo iletme bilgilerini öğrenin."
         android:textAlignment="center"
         android:textColor="@color/koyuGri"
-        app:layout_constraintBottom_toTopOf="@+id/btnkilavuzikiSonraki"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -98,7 +84,6 @@
         android:id="@+id/btnkilavuzikiSonraki"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
         android:background="@drawable/bosbuton"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sonraki"
@@ -106,7 +91,6 @@
         android:textColor="#395950"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
