@@ -1,14 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".iletHakkinda">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textViewKS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="İN"
+        android:textColor="@color/KoyuMor"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textViewIletHakkinda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="İlet Nedir"
+        android:textColor="@color/KoyuMor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIHbir"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="ilet, kargoları aynı yöne giden güvenilir taşımacılarla buluşturan yeni nesil bir uygulamadır."
+        android:textColor="@color/KoyuMor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewIletHakkinda"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIHbir2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Kargo ücretini saniyeler içinde öğrenebilir, taşımacıyı kapına kadar çağırabilirsin. Kargon hiç beklemeden yola çıkar ve başka şehirdeki alıcısına bile birkaç saatte ulaşır. Taşımacı ile uygulama üzerinden telefon numaran görünmeden konuşabilir ve kargonu yol boyunca canlı takip edebilirsin."
+        android:textColor="@color/KoyuMor"
+        app:layout_constraintStart_toStartOf="@+id/textViewIHbir"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIHbir" />
+
+    <TextView
+        android:id="@+id/textViewIHbir3"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Kurye, kargo ve nakliye hizmetlerini tek platformda toplayan ilet sayesinde taşımacılar, gideceği yere kargo ya da eşya götürerek para kazanır. Taşımacılar, şehirde yolculuk yaparken, işe giderken ya da şehirler arası seyahat ederken yolunun üzerindeki kargoları teslim ederek ek gelir elde eder."
+        android:textColor="@color/KoyuMor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewIHbir2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIHbir2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

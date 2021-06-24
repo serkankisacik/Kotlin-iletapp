@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import kotlinx.android.synthetic.main.fragment_acilis.*
 import kotlinx.android.synthetic.main.fragment_splash.*
 
 class SplashFragment : Fragment() {
@@ -25,7 +24,7 @@ class SplashFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        splashgiris.setOnClickListener {
+        splashGiris.setOnClickListener {
             val action = SplashFragmentDirections.actionSplashFragmentToAcilisFragment()
             Navigation.findNavController(it).navigate(action)
         }

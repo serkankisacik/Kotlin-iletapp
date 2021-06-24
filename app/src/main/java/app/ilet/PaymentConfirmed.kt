@@ -25,7 +25,7 @@ class PaymentConfirmed : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        splashgiris.setOnClickListener{
+        splashOnay.setOnClickListener{
             var action = PaymentConfirmedDirections.actionPaymentConfirmedToCreateQR()
             Navigation.findNavController(it).navigate(action)
         }

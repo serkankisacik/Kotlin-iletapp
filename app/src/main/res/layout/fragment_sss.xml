@@ -49,28 +49,15 @@
 
     <TextView
         android:id="@+id/textViewCevapBir"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="49dp"
         android:fontFamily="@font/poppins"
-        android:text="@string/it_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
+        android:text="Bu uygulama kayıt olma sırasında aldığı kullanıcı bilgileri sayesinde bilgileriniz gizli kalıyor."
         android:textColor="@color/KoyuMor"
-        app:layout_constraintBottom_toTopOf="@+id/textViewAciklamabir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSSS" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewSorubir" />
 
-    <TextView
-        android:id="@+id/textViewAciklamabir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginBottom="341dp"
-        android:text="@string/buraya_expandable_recyclerview_tarz_nda_bir_ey_ayp_lacak"
-        android:textColor="@color/KoyuMor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCevapBir" />
 </androidx.constraintlayout.widget.ConstraintLayout>

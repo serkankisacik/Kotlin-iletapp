@@ -68,6 +68,7 @@ class poatAdapter(mcontex : Context,postListt: List<Post>) :
         holder.price.setOnClickListener {
             val intent = Intent(mContex, sendOffer::class.java)
             intent.putExtra("price", postList[position].price)
+            intent.putExtra("user", postList[position].userid)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             mContex.startActivity(intent)
         }

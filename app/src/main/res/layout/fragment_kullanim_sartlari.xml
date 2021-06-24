@@ -36,31 +36,14 @@
 
     <TextView
         android:id="@+id/textViewKSbir"
-        android:layout_width="0dp"
-        android:layout_height="129dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="117dp"
-        android:layout_marginBottom="129dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="@string/t_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
+        android:text="Uygulamanın kullanılması amacıyla sınırlı olarak Uygulama’ya giriş yapabilmesi ve Uygulama’da yer alan bilgilere erişebilmesi için üye olan kullanıcılara özel bir kullanıcı adı ve şifre tanımlanacaktır. Kullanıcılar, kullanıcı adını ve şifresini gizli tutacağını, herhangi bir üçüncü kişiyle paylaşmayacağını, bu şifrenin yanlış kullanımından ya da çalınması/kaybolması hallerinden doğabilecek tüm zararlardan sorumlu olacağını, işbu maddenin ihlali ve/veya kullanıcı adı ve şifresinin hatalı kullanımı ya da çalınması/kaybolması hallerinde derhal İLET Müşteri Hizmetleri’ne bildireceğini kabul ve taahhüt eder."
         android:textColor="@color/KoyuMor"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewKSiki"
-        app:layout_constraintEnd_toEndOf="@+id/textViewKSiki"
-        app:layout_constraintStart_toStartOf="@+id/textViewKSiki"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewKSiki"
-        android:layout_width="0dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="246dp"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/poppins"
-        android:text="@string/t_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its_layout_the_point_of_using_lorem_ipsum_is_that_it_has_a_more_or_less_normal_distribution_of_letters"
-        android:textColor="@color/KoyuMor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:id="@+id/buttonKSKabul"
