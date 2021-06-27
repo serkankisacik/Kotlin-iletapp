@@ -47,8 +47,6 @@ class kayitEkrani : Fragment() {
                     val database = FirebaseDatabase.getInstance()
                     val myRef = database.getReference("users")
                     myRef.child(userid).setValue(user)
-
-
                     Toast.makeText(activity, "Kullanıcı başarı ile oluşturuldu", Toast.LENGTH_SHORT).show()
                     val action = kayitEkraniDirections.actionKayitEkraniToKayitTelefon()
                     Navigation.findNavController(it).navigate(action)
@@ -58,14 +56,5 @@ class kayitEkrani : Fragment() {
             }
         }
 
-        checkBoxGP.setOnClickListener {
-            val action = kayitEkraniDirections.actionKayitEkraniToGizlilikPolitikasi2()
-            Navigation.findNavController(it).navigate(action)
-        }
-
-        checkBoxKS.setOnClickListener {
-            val action = kayitEkraniDirections.actionKayitEkraniToKullanimSartlari2()
-            Navigation.findNavController(it).navigate(action)
-        }
     }
 }

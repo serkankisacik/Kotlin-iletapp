@@ -109,13 +109,9 @@ public class MessageActivity extends AppCompatActivity {
                 cuser = user;
                 username.setText(user.getUsername());
                 profile_image.setImageResource(R.drawable.user);
-
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
             }
         });
 
@@ -128,7 +124,6 @@ public class MessageActivity extends AppCompatActivity {
 
     }
 
-
     private void init() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -140,9 +135,7 @@ public class MessageActivity extends AppCompatActivity {
                 startActivity(new Intent(MessageActivity.this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
             }
         });
-
         apiService = Client.getClient("https://fcm.googleapis.com/").create(APIService.class);
-
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -154,7 +147,6 @@ public class MessageActivity extends AppCompatActivity {
         text_send = findViewById(R.id.text_send);
         relativeLayout = findViewById(R.id.Main);
         fuser = FirebaseAuth.getInstance().getCurrentUser();
-        
         intent = getIntent();
         userid = intent.getStringExtra("userid");
         NotifyCancel(userid);
@@ -180,31 +172,22 @@ public class MessageActivity extends AppCompatActivity {
 
 
     private void sendMessage(String sender, final String receiver, String message) {
-
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-
         android.text.format.DateFormat df = new android.text.format.DateFormat();
-
         String zaman = df.format("yyMMddHHmmss", new java.util.Date()).toString();
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("sender", sender);
         hashMap.put("receiver", receiver);
         hashMap.put("message", message);
-
-
         reference.child("Chats").child(userid).child(fuser.getUid()).push().setValue(hashMap);
         reference.child("Chats").child(fuser.getUid()).child(userid).push().setValue(hashMap);
-
         // add user to chat fragment
         final DatabaseReference chatRef = FirebaseDatabase.getInstance().getReference("Chatlist");
         Chatlist B = new Chatlist(userid, zaman);
         Chatlist O = new Chatlist(fuser.getUid(), zaman);
         chatRef.child(fuser.getUid()).child(userid).setValue(B);
         chatRef.child(userid).child(fuser.getUid()).setValue(O);
-
-
         final String msg = message;
-
         reference = FirebaseDatabase.getInstance().getReference("users").child(fuser.getUid());
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -215,10 +198,8 @@ public class MessageActivity extends AppCompatActivity {
                 }
                 notify = false;
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
             }
         });
     }

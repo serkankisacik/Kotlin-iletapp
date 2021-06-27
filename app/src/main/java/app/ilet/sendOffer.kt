@@ -34,9 +34,7 @@ class sendOffer : AppCompatActivity() {
         ivQRcode = findViewById(R.id.ivQRCode)
         etData = findViewById(R.id.kartAd)
         btnGenerateQRcode = findViewById(R.id.btnOde)
-
-
-
+        
         btnGenerateQRcode.setOnClickListener {
             val data = etData.text.toString().trim()
             if(data.isEmpty()){

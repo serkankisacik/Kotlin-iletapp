@@ -54,22 +54,15 @@ public class MessageAdapter extends RecyclerView.Adapter {
     public static final int MSG_TYPE_LEFT = 0;
     public static final int MSG_TYPE_RIGHT = 1;
 
-
     private Context mContext;
     private List<Chat> mChat = new ArrayList<>();
     Activity activity;
     FirebaseUser fuser;
-
-
     public MessageAdapter(Activity activity, Context mContext, List<Chat> mChat) {
         this.mChat = mChat;
         this.mContext = mContext;
         this.activity = activity;
-
-
     }
-
-
     @Override
     public int getItemViewType(int position) {
         fuser = FirebaseAuth.getInstance().getCurrentUser();
@@ -79,13 +72,10 @@ public class MessageAdapter extends RecyclerView.Adapter {
         } else {
             return MSG_TYPE_LEFT;
         }
-
     }
-
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
         RecyclerView.ViewHolder vh;
         if (viewType == MSG_TYPE_RIGHT) {
             View view = LayoutInflater.from(mContext).inflate(R.layout.chat_item_right, parent, false);
@@ -94,39 +84,25 @@ public class MessageAdapter extends RecyclerView.Adapter {
             View view = LayoutInflater.from(mContext).inflate(R.layout.chat_item_left, parent, false);
             vh = new MViewHolder(view);
         }
-
-
         return vh;
     }
-
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof MViewHolder) {
             final Chat chat = mChat.get(position);
 
             ((MViewHolder) holder).show_message.setText(chat.getMessage());
-
-
         }
     }
-
-
     @Override
     public int getItemCount() {
         return mChat.size();
     }
-
-
     public class MViewHolder extends RecyclerView.ViewHolder {
-
         public TextView show_message;
-
         public MViewHolder(View itemView) {
             super(itemView);
             show_message = itemView.findViewById(R.id.show_message);
         }
-
     }
-
-
 }
